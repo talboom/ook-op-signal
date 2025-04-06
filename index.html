@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ook op Signal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="css/styles.css?v=0.1">
+	<link rel="icon" type="images/png" href="images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<nav id="topBar" class="navbar"  role="navigation" aria-label="main navigation">
+		<div class="navbar-container">
+			<div class="navbar-brand">
+				<a href="index.html" id="title">Ook op<br/>Signal</a>
+				<div id="toggleLang">
+				<button id="selectedLang" class="button">
+					<i class="fa-flag-nl">NL</i>
+				</button>
+				<div id="langDropdown" class="dropdown-content">
+					<button id="nlButton" class="button">
+						<i class="fa-flag-nl">NL</i>
+					</button>
+					<button id="enButton" class="button">
+						<i class="fa-flag-uk">EN</i>
+					</button>
+					</div>
+				</div>
+			</div>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+			<div class="navbar-menu" id="navMenu">
+				<div class="navbar-end">
+					<a href="#" class="navbar-item is-active">
+						Tool
+					</a>
+					<a href="waaromSignal.html" class="navbar-item">
+						Waarom naar Signal?
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="container">
+		
+		<div id="intro" class="block">
+			<h1 id="introTitle" class="title is-3">Stap over op Signal</h1>
+			<h2 class="subtitle is-5 mb-4">– en help anderen hetzelfde te doen!</h2>
+			<span id="introText">
+				<p class="mb-4">De overstap van WhatsApp naar Signal klinkt simpel, maar in de praktijk blijkt het vaak lastig. Want waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
+				<p class="mb-4">Om dit probleem zichtbaar te maken, heb ik een tool gemaakt waar je profielfoto kan maken die laat zien dat je bereikbaar bent op Signal. Zo maak je het makkelijker voor je vrienden en familier om de overstap te maken. </p>
+				<p class="mb-4"><strong>Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
+				<p>Wil je eerst meer weten? <a href="#">Lees meer</a></p>
+			</span>
+		</div>
+		<div id="howItWorks" class="block block-emphasis mb-0 pb-0">
+			<div class="columns is-centered">
+				<div class="column is-flex is-4 is-align-items-center"> 
+					<div id="howItWorksText">
+						<h3 class="title mb-2 has-text-left">Hoe werkt het?</h3>
+						<ul class="has-text-left mb-0">
+							<li>1. 📸 Upload je profielfoto</li>
+							<li>2. 🖼️ Voeg "Ook op Signal" toe</li>
+							<li>3. 📲 Gebruik op WhatsApp</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column is-6">
+					<img src="images/example.png" alt="Example image">
+				</div>
+			</div>
+		</div>
+
+		<div id="imageBlock" class="block">
+			<div id="imageEditor">
+				<div id="imagePreview">
+					<div class="upload-form">
+						<form id="initialUploadForm">
+							<div class="file">
+								<label class="file-label">
+									<input class="file-input" type="file" id="initialImageInput" accept=".png, .jpg, .jpeg, capture=environment*">
+										<span id="initialUploadButton" class="button is-info">Upload foto</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="thumbnails">
+					<img src="images/ookopsignal.png" alt="Thumbnail 1" class="thumbnail active" data-overlay="images/ookopsignal.png">
+					<img src="images/alsoonsignal.png" alt="Thumbnail 2" class="thumbnail" data-overlay="images/alsoonsignal.png">
+				</div>
+			</div> 
+		</div>
+		<div class="block">
+			<div id="buttons" class="columns is-centered">
+				<div class="column is-flex is-3 is-align-items-center">
+					<button id="downloadButton" class="button is-success"">Download</button>
+				</div>
+				<div class="column is-flex is-3 is-align-items-center">
+					<form id="uploadForm">
+						<form id="initialUploadForm">
+							<div class="file">
+								<label class="file-label">
+									<input class="file-input" type="file" id="imageInput" accept=".png, .jpg, .jpeg, capture=environment">
+									<span id="uploadButton" class="button is-light"">Nieuwe foto</span>
+								</label>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<canvas id="canvas"></canvas>
+		<div id="getSignal" class="block">
+			<div class="columns is-centered">
+				<div class="column is-flex is-3 is-align-items-center">
+					<h3 class="title is-4 mb-0 has-text-centered">Nog geen Signal?</h3>
+				</div>
+				<div class="column is-3">
+					<div id="storeLinks">
+						<a class="button is-dark is-small" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
+							<span class="icon"><i class="fab fa-google-play"></i></span>
+							<span>Download voor Android</span>
+						</a>
+						<a class="button is-dark is-small" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
+							<span class="icon"><i class="fab fa-apple"></i></span>
+							<span>Download voor iPhone/iPad</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="linkedinBar" class="block block-emphasis">
+			<a href="mailto:talboom@proton.me">Thijs Talboom</a> | <a href="https://www.linkedin.com/in/t-talboom/" target="_blank">LinkedIn</a>
+		</div>
+	</div>
+	<script src="javascript/burger.js"></script>
+	<script src="javascript/language.js"></script>
+	<script src="javascript/upload.js"></script>
+	<script src="javascript/drag.js"></script>
+	<script src="javascript/download.js"></script>
+</body>
+</html>
