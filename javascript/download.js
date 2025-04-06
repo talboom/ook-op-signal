@@ -85,7 +85,8 @@ function addOverlayAndDownload(croppedCanvas) {
 
         // Download the image
         const link = document.createElement('a');
-        link.href = croppedCanvas.toDataURL();
+        const imageData = croppedCanvas.toDataURL('image/png', 1.0);
+        link.href = imageData;
         link.download = 'wa_to_signal_profile_pic.png';
         link.click();
     };
