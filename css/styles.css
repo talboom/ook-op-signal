@@ -425,6 +425,10 @@ body {
     background-color: #2857b8;
 }
 
+#downloadNote{
+    display: none;
+}
+
 canvas {
     display: none;
 }

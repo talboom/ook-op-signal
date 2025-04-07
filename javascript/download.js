@@ -73,6 +73,10 @@ function addOverlayAndDownload(croppedCanvas) {
     overlayImg.crossOrigin = 'anonymous'; // Fix CORS error for overlay
     overlayImg.src = currentOverlay; // Use the selected overlay
 
+    if (navigator.userAgent.includes('FBAN')) {
+        document.getElementById('downloadNote').style.display = 'block';
+    }
+
     overlayImg.onload = function() {
         const ctx = croppedCanvas.getContext('2d');
         const overlayHeight = croppedCanvas.height;
