@@ -73,7 +73,7 @@ function addOverlayAndDownload(croppedCanvas) {
     overlayImg.crossOrigin = 'anonymous'; // Fix CORS error for overlay
     overlayImg.src = currentOverlay; // Use the selected overlay
 
-    if (navigator.userAgent.includes('FBAN')) {
+    if (navigator.userAgent.includes('LinkedInApp')) {
         document.getElementById('downloadNote').style.display = 'block';
     }
 
@@ -94,4 +94,9 @@ function addOverlayAndDownload(croppedCanvas) {
         link.download = 'wa_to_signal_profile_pic.png';
         link.click();
     };
+}
+
+if (navigator.userAgent.includes('LinkedInApp') && navigator.userAgent.includes('iPhone')) {
+    document.getElementById('downloadNote').style.display = 'block';
+    document.getElementById('noteText').innerText = 'Let op: Het downloaden werkt niet in de LinkedIn-app op een iPhone. Open deze pagina in een browser via het menu rechtsboven.';
 }
