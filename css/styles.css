@@ -68,15 +68,20 @@ body {
     max-width: 800px;
     padding: 10px 20px;
     margin: 0 auto;
+    gap: 5px;
 }
 
-#topBar a{
-    border-radius: 10px;
+#topBar .navbar-burger {
+    border-radius: 5px;
+}
+
+#topBar a.navbar-item{
+    border-radius: 5px;
     margin: 0 5px;
 }
 
 #topBar a.is-active {
-    background-color: #CCC;
+    background-color: rgba(0,0,0,.05);
     color: #000;
 }
 
@@ -84,11 +89,14 @@ body {
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
-    display: none;
+    height: 3.25rem;
+}
+
+#toggleLang:hover {
+    background-color: rgba(0, 0, 0, .05);
 }
 
 #selectedLang {
-    background-color: #fff;
     width: 65px;
     border: none;
     padding: 5px 10px 5px 35px;
@@ -99,34 +107,35 @@ body {
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 10px center;
+    position: relative;
 }
 
 #langDropdown {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right:  20px;
+    top: 4.2em;
+    right: 20px;
     background-color: white;
     border-radius: 5px;
     z-index: 5;
-    margin: 5px;
+    margin: 0;
+    padding: .5rem 0;
 }
 
-#toggleLang.active #langDropdown {
+#toggleLang.is-active {
+    color: rgb(48, 48, 48);
+    background-color: rgba(146, 146, 146, 0.157);
+}
+
+#toggleLang.is-active #langDropdown {
     display: flex;
 }
 
 #toggleLang button {
-    background-color: #ccc;
     border: none;
-    padding: 5px 5px 5px 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-#toggleLang button.active {
-    background-color: white;
 }
 
 #toggleLang button:hover {
@@ -136,10 +145,16 @@ body {
 #langDropdown .button {
     background-color: white;
     border: none;
-    padding: 5px 10px;
+    padding: .5rem .75rem;
+    margin: 0 5px;
     width: 65px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+#langDropdown .button.active {
+    background-color: rgba(0,0,0,.05);
+    color: #000;
 }
 
 #langDropdown .button:hover {
@@ -479,8 +494,12 @@ canvas {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: #fff;
         top: 4.2em;
-        right: 20px;
-        border-radius: 10px;
+        right: 100px;
+        border-radius: 5px;
+    }
+
+    #selectedLang {
+        top: 14px;
     }
 }
 
