@@ -7,7 +7,7 @@ document.getElementById('enButton').addEventListener('click', function() {
 });
 
 document.getElementById('selectedLang').addEventListener('click', function() {
-    document.getElementById('toggleLang').classList.toggle('active');
+    document.getElementById('toggleLang').classList.toggle('is-active');
 });
 
 function setLanguage(lang) {
@@ -20,5 +20,5 @@ function setLanguage(lang) {
         document.getElementById('enButton').classList.remove('active');
         document.getElementById('nlButton').classList.add('active');
     }
-    document.getElementById('toggleLang').classList.remove('active');
+    document.getElementById('toggleLang').classList.remove('is-active');
 }
