@@ -73,30 +73,22 @@ function addOverlayAndDownload(croppedCanvas) {
     overlayImg.crossOrigin = 'anonymous'; // Fix CORS error for overlay
     overlayImg.src = currentOverlay; // Use the selected overlay
 
-    if (navigator.userAgent.includes('LinkedInApp')) {
-        document.getElementById('downloadNote').style.display = 'block';
-    }
-
     overlayImg.onload = function() {
         const ctx = croppedCanvas.getContext('2d');
-        const overlayHeight = croppedCanvas.height;
-        const overlayWidth = croppedCanvas.width;
+        ctx.drawImage(overlayImg, 0, 0, croppedCanvas.width, croppedCanvas.height);
 
-        ctx.drawImage(
-            overlayImg,
-            0, 0, overlayWidth, overlayHeight
-        );
+        croppedCanvas.toBlob(function (blob) {
+            const url = blob ? URL.createObjectURL(blob) : croppedCanvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'ookopsignal_profile_pic.png';
+            link.click();
 
-        // Download the image
-        const link = document.createElement('a');
-        const imageData = croppedCanvas.toDataURL('image/png', 1.0);
-        link.href = imageData;
-        link.download = 'wa_to_signal_profile_pic.png';
-        link.click();
+            if (navigator.userAgent.includes('LinkedInApp') && navigator.userAgent.includes('iPhone')) {
+                const downloadNote = document.getElementById('downloadNote');
+                downloadNote.innerHTML = '<img src='+url+' alt="Save your image">';
+                downloadNote.style.display = 'block';
+            }
+        }, 'image/png');
     };
-}
-
-if (navigator.userAgent.includes('LinkedInApp') && navigator.userAgent.includes('iPhone')) {
-    document.getElementById('downloadNote').style.display = 'block';
-    document.getElementById('noteText').innerText = 'Let op: Het downloaden werkt niet in de LinkedIn-app op een iPhone. Open deze pagina in een browser via het menu rechtsboven.';
 }
