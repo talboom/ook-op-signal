@@ -181,22 +181,22 @@ body {
 }
 
 /* How it Works Section */
-#howItWorks img {
+.howitworks img {
     width: 100%;
     object-fit: cover;
     object-position: 0% 0%;
 }
 
-#howItWorks .title {
+.howitworks .title {
     color: #000;
     font-weight: normal;
 }
 
-#howItWorksText{
+.howitworksText{
     margin: 0 auto;
 }
 
-#howItWorks .column.is-6 {
+.howitworks .column.is-6 {
     line-height: 0;
 }
 
@@ -497,7 +497,7 @@ canvas {
         width: 100%;
     }
 
-    #howItWorks .column {
+    .howitworks .column {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -516,10 +516,10 @@ canvas {
         width: 100%;
     }
     
-    #howItWorks > .columns {
+    .howitworks > .columns {
         display: flex;
     }
-    #howItWorks li {
+    .howitworks li {
         font-size: 0.8em;
     }
 }
@@ -533,7 +533,7 @@ canvas {
         font-size: 1.2em;
     }
 
-    #howItWorks > .columns {
+    .howitworks > .columns {
         display: block;
     }
 }
