@@ -181,22 +181,22 @@ body {
 }
 
 /* How it Works Section */
-.howitworks img {
+#howItWorks img {
     width: 100%;
     object-fit: cover;
     object-position: 0% 0%;
 }
 
-.howitworks .title {
+#howItWorks .title {
     color: #000;
     font-weight: normal;
 }
 
-.howitworksText{
+#howItWorksText{
     margin: 0 auto;
 }
 
-.howitworks .column.is-6 {
+#howItWorks .column.is-6 {
     line-height: 0;
 }
 
@@ -497,7 +497,7 @@ canvas {
         width: 100%;
     }
 
-    .howitworks .column {
+    #howItWorks .column {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -516,10 +516,10 @@ canvas {
         width: 100%;
     }
     
-    .howitworks > .columns {
+    #howItWorks > .columns {
         display: flex;
     }
-    .howitworks li {
+    #howItWorks li {
         font-size: 0.8em;
     }
 }
@@ -533,7 +533,7 @@ canvas {
         font-size: 1.2em;
     }
 
-    .howitworks > .columns {
+    #howItWorks > .columns {
         display: block;
     }
 }
