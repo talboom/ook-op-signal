@@ -21,8 +21,7 @@
 	<nav id="topBar" class="navbar"  role="navigation" aria-label="main navigation">
 		<div class="navbar-container">
 			<div class="navbar-brand">
-				<a href="index.html" id="title">Ook op<br/>Signal</a>
-				
+				<a href="index.html" id="title" data-i18n="logo.text">Ook op<br/>Signal</a>
 			</div>
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
 				<span aria-hidden="true"></span>
@@ -31,11 +30,11 @@
 			</a>
 			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-end">
-					<a href="#" class="navbar-item is-active">
+					<a href="index.html?lang={{lang}}" class="navbar-item" data-i18n="nav.tool" data-internal="true" id="nav-tool">
 						Tool
 					</a>
-					<a href="waaromSignal.html" class="navbar-item">
-						Waarom naar Signal?
+					<a href="waaromSignal.html?lang={{lang}}" class="navbar-item" data-i18n="nav.whySignal" data-internal="true" id="nav-why">
+						Waarom Signal?
 					</a>
 					<hr class="navbar-divider">
 					<div id="toggleLang" class="navbar-item">
@@ -60,24 +59,24 @@
 	<div id="container">
 		
 		<div id="intro" class="block">
-			<h1 id="introTitle" class="title is-3">Stap over op Signal</h1>
-			<h2 class="subtitle is-5 mb-4">– en help anderen hetzelfde te doen!</h2>
+			<h1 id="introTitle" class="title is-3" data-i18n="intro.title">Stap over op Signal</h1>
+			<h2 class="subtitle is-5 mb-4" data-i18n="intro.subtitle">– en help anderen hetzelfde te doen!</h2>
 			<span id="introText">
-				<p class="mb-4">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
-				<p class="mb-4">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
-				<p class="mb-4"><strong>Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
-				<p>Meer weten waarom je zou overstappen naar Signal? <a href="waaromSignal.html">Lees hier meer</a>.</p>
+				<p class="mb-4" data-i18n="whySignal.intro1">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
+				<p class="mb-4" data-i18n="whySignal.intro2">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
+				<p class="mb-4"><strong data-i18n="whySignal.callToAction">Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
+				<p>Meer weten waarom je zou overstappen naar Signal? <a href="waaromSignal.html?lang={{lang}}" data-i18n="whySignal.readMore" data-internal="true">Lees hier meer</a>.</p>
 			</span>
 		</div>
 		<div id="howItWorks" class="block block-emphasis mb-0 pb-0">
 			<div class="columns is-centered">
 				<div class="column is-flex is-4 is-align-items-center"> 
 					<div id="howItWorksText">
-						<h3 class="title mb-2 has-text-left">Hoe werkt het?</h3>
+						<h3 class="title mb-2 has-text-left" data-i18n="howItWorks.title">Hoe werkt het?</h3>
 						<ul class="has-text-left mb-0">
-							<li>1. 📸 Upload je profielfoto</li>
-							<li>2. 🖼️ Voeg de badge toe</li>
-							<li>3. 📲 Gebruik op WhatsApp</li>
+							<li data-i18n="howItWorks.step1">1. 📸 Upload je profielfoto</li>
+							<li data-i18n="howItWorks.step2">2. 🖼️ Voeg de badge toe</li>
+							<li data-i18n="howItWorks.step3">3. 📲 Gebruik op WhatsApp</li>
 						</ul>
 					</div>
 				</div>
@@ -94,7 +93,7 @@
 							<div class="file">
 								<label class="file-label">
 									<input class="file-input" type="file" id="initialImageInput" accept=".png, .jpg, .jpeg, capture=environment*">
-										<span id="initialUploadButton" class="button is-info">Upload foto</span>
+										<span id="initialUploadButton" class="button is-info" data-i18n="button.upload">Upload foto</span>
 								</label>
 							</div>
 						</form>
@@ -105,7 +104,7 @@
 					<img src="images/alsoonsignal.png" alt="Thumbnail 2" class="thumbnail" data-overlay="images/alsoonsignal.png">
 				</div>
 				<div class="is-4 is-centered">
-					<p class="has-text-grey-light is-size-7 has-text-centered">
+					<p class="has-text-grey-light is-size-7 has-text-centered" data-i18n="note.privacy">
 						De foto wordt uitsluitend verwerkt in je browser en wordt dus nergens opgeslagen.
 					</p>
 				</div>
@@ -114,7 +113,7 @@
 		<div class="block">
 			<div id="buttons" class="columns is-centered">
 				<div class="column is-flex is-3 is-align-items-center">
-					<button id="downloadButton" class="button is-success"">Download</button>
+					<button id="downloadButton" class="button is-success" data-i18n="button.download">Download</button>
 				</div>
 				<div class="column is-flex is-3 is-align-items-center">
 					<form id="uploadForm">
@@ -122,7 +121,7 @@
 							<div class="file">
 								<label class="file-label">
 									<input class="file-input" type="file" id="imageInput" accept=".png, .jpg, .jpeg, capture=environment">
-									<span id="uploadButton" class="button is-light"">Nieuwe foto</span>
+									<span id="uploadButton" class="button is-light" data-i18n="button.newPhoto">Nieuwe foto</span>
 								</label>
 							</div>
 					</form>
@@ -130,7 +129,7 @@
 			</div>
 			<div>
 				<div id="downloadNote" class="notification is-info is-light">
-					<p id="noteText" class="is-size-7">Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.</p>
+					<p id="noteText" class="is-size-7" data-i18n="note.download">Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.</p>
 				</div>
 			</div>
 		</div>
@@ -138,17 +137,17 @@
 		<div id="getSignal" class="block">
 			<div class="columns is-centered">
 				<div class="column is-flex is-3 is-align-items-center">
-					<h3 class="title is-4 mb-0 has-text-centered">Nog geen Signal?</h3>
+					<h3 class="title is-4 mb-0 has-text-centered" data-i18n="getSignal.title">Nog geen Signal?</h3>
 				</div>
 				<div class="column is-3">
 					<div id="storeLinks">
 						<a class="button is-dark is-small" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
 							<span class="icon"><i class="fab fa-google-play"></i></span>
-							<span>Download voor Android</span>
+							<span data-i18n="getSignal.downloadAndroid">Download voor Android</span>
 						</a>
 						<a class="button is-dark is-small" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
 							<span class="icon"><i class="fab fa-apple"></i></span>
-							<span>Download voor iPhone/iPad</span>
+							<span data-i18n="getSignal.downloadIos">Download voor iPhone/iPad</span>
 						</a>
 					</div>
 				</div>
