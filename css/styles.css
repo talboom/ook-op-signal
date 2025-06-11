@@ -75,54 +75,110 @@ body {
     border-radius: 5px;
 }
 
-#topBar a.navbar-item{
+#topBar .navbar-item{
     border-radius: 5px;
     margin: 0 5px;
+    font-weight: 400;
+}
+
+#topBar .navbar-item:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.navbar-divider {
+    height: 1.5rem;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 0 0 0.5rem;
+    align-self: center;
 }
 
 #topBar a.is-active {
     background-color: rgba(0,0,0,.05);
     color: #000;
+    font-weight: 600;
 }
 
+/* Language Selector Styles */
 #toggleLang {
-    align-items: center;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 3.25rem;
-}
-
-#toggleLang:hover {
-    background-color: rgba(0, 0, 0, .05);
-}
-
-#selectedLang {
-    width: 65px;
-    border: none;
-    padding: 5px 10px 5px 35px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 5px;
-    background-image: url(../images/solid_globe.svg);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 10px center;
     position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#toggleLang::after {
+    content: '▼';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6em;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+#selectedLang .language-option {
+    padding-left: 1.5rem;
 }
 
 #langDropdown {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 4.2em;
-    right: 20px;
+    top: 3em;
     background-color: white;
     border-radius: 5px;
     z-index: 5;
     margin: 0;
-    padding: .5rem 0;
 }
 
+
+#toggleLang:hover #langDropdown {
+    display: block;
+}
+
+#langDropdown .language-option {
+    padding: 0.5rem 1.2rem;
+    border-radius: 3px;
+    width: 120px;
+    font-size: 0.8rem;
+}
+
+#langDropdown .language-option:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#langDropdown .language-option i {
+    min-width: 16px;
+    text-align: center;
+}
+
+#selectedLang {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    background-image: url(../images/solid_globe.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 0px center;
+    position: relative;
+}
 #toggleLang.is-active {
     color: rgb(48, 48, 48);
     background-color: rgba(146, 146, 146, 0.157);
@@ -134,12 +190,9 @@ body {
 
 #toggleLang button {
     border: none;
+    background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-#toggleLang button:hover {
-    background-color: #eee;
 }
 
 #langDropdown .button {

@@ -28,19 +28,22 @@
 					<a href="#" class="navbar-item  is-active">
 						Waarom naar Signal?
 					</a>
-				</div>
-			</div>
-			<div id="toggleLang">
-				<button id="selectedLang" class="button">
-					<i class="fa-flag-nl">NL</i>
-				</button>
-				<div id="langDropdown" class="dropdown-content">
-					<button id="nlButton" class="button">
-						<i class="fa-flag-nl">NL</i>
-					</button>
-					<button id="enButton" class="button">
-						<i class="fa-flag-uk">EN</i>
-					</button>
+					<hr class="navbar-divider">
+					<div id="toggleLang" class="navbar-item">
+						<button id="selectedLang" aria-label="Select language">
+							<span class="language-option">
+								<span>Nederlands</span>
+							</span>
+						</button>
+						<div id="langDropdown" class="dropdown-content">
+							<button class="language-option" data-lang="nl">
+								<span>Nederlands</span>
+							</button>
+							<button class="language-option" data-lang="en">
+								<span>English</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
