@@ -68,78 +68,146 @@ body {
     max-width: 800px;
     padding: 10px 20px;
     margin: 0 auto;
+    gap: 5px;
 }
 
-#topBar a{
-    border-radius: 10px;
+#topBar .navbar-burger {
+    border-radius: 5px;
+}
+
+#topBar .navbar-item{
+    border-radius: 5px;
     margin: 0 5px;
+    font-weight: 400;
+}
+
+#topBar .navbar-item:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.navbar-divider {
+    height: 1.5rem;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 0 0 0.5rem;
+    align-self: center;
 }
 
 #topBar a.is-active {
-    background-color: #CCC;
+    background-color: rgba(0,0,0,.05);
     color: #000;
+    font-weight: 600;
 }
 
+/* Language Selector Styles */
 #toggleLang {
+    position: relative;
+    display: inline-flex;
     align-items: center;
-    border-radius: 5px;
-    overflow: hidden;
-    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
 }
 
-#selectedLang {
-    background-color: #fff;
-    width: 65px;
+#toggleLang::after {
+    content: '▼';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6em;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
     border: none;
-    padding: 5px 10px 5px 35px;
+    text-align: left;
     cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 5px;
-    background-image: url(../images/solid_globe.svg);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 10px center;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+#selectedLang .language-option {
+    padding-left: 1.5rem;
 }
 
 #langDropdown {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right:  20px;
+    top: 3em;
     background-color: white;
     border-radius: 5px;
     z-index: 5;
-    margin: 5px;
+    margin: 0;
 }
 
-#toggleLang.active #langDropdown {
+
+#toggleLang:hover #langDropdown {
+    display: block;
+}
+
+#langDropdown .language-option {
+    padding: 0.5rem 1.2rem;
+    border-radius: 3px;
+    width: 120px;
+    font-size: 0.8rem;
+}
+
+#langDropdown .language-option:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#langDropdown .language-option i {
+    min-width: 16px;
+    text-align: center;
+}
+
+#selectedLang {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    background-image: url(../images/solid_globe.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 0px center;
+    position: relative;
+}
+#toggleLang.is-active {
+    color: rgb(48, 48, 48);
+    background-color: rgba(146, 146, 146, 0.157);
+}
+
+#toggleLang.is-active #langDropdown {
     display: flex;
 }
 
 #toggleLang button {
-    background-color: #ccc;
     border: none;
-    padding: 5px 5px 5px 30px;
+    background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-#toggleLang button.active {
-    background-color: white;
-}
-
-#toggleLang button:hover {
-    background-color: #eee;
 }
 
 #langDropdown .button {
     background-color: white;
     border: none;
-    padding: 5px 10px;
+    padding: .5rem .75rem;
+    margin: 0 5px;
     width: 65px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+#langDropdown .button.active {
+    background-color: rgba(0,0,0,.05);
+    color: #000;
 }
 
 #langDropdown .button:hover {
@@ -479,8 +547,12 @@ canvas {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: #fff;
         top: 4.2em;
-        right: 20px;
-        border-radius: 10px;
+        right: 100px;
+        border-radius: 5px;
+    }
+
+    #selectedLang {
+        top: 14px;
     }
 }
 

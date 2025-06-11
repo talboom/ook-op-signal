@@ -91,12 +91,17 @@ function addOverlayAndDownload(croppedCanvas) {
         const link = document.createElement('a');
         const imageData = croppedCanvas.toDataURL('image/png', 1.0);
         link.href = imageData;
-        link.download = 'wa_to_signal_profile_pic.png';
+        link.download = 'wa_to_signal.png';
         link.click();
     };
 }
 
-if (navigator.userAgent.includes('LinkedInApp') && navigator.userAgent.includes('iPhone')) {
+const lang = getLanguageFromUrl();
+
+if (navigator.userAgent.includes('LinkedInApp') &&
+    navigator.userAgent.includes('iPhone')) {
+
     document.getElementById('downloadNote').style.display = 'block';
-    document.getElementById('noteText').innerText = 'Let op: Het downloaden werkt niet in de LinkedIn-app op een iPhone. Open deze pagina in een browser via het menu rechtsboven.';
+    document.getElementById('noteText').innerText =
+        translations[lang]['note.downloadLinkedin'];
 }
