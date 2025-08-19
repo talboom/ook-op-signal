@@ -8,7 +8,15 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     }
 });
 
-let currentOverlay = 'images/ookopsignal.png'; // Default overlay
+const lang = getLanguageFromUrl();
+
+const currentOverlay = {
+    en: 'images/ookopsignal.png',
+    nl: 'images/ookopsignal.png',
+    de: 'images/auchaufsignal.png',
+    sv: 'images/ocksapasignal.png',
+    fr: 'images/aussisursignal.png'
+}[lang];
 
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {
     thumbnail.addEventListener('click', function () {
@@ -72,6 +80,7 @@ function createCroppedCanvas(originalCanvas, image, spotlight) {
 }
 
 function addOverlayAndDownload(croppedCanvas) {
+    console.log(currentOverlay);
     const overlayImg = new Image();
     overlayImg.crossOrigin = 'anonymous'; // Fix CORS error for overlay
     overlayImg.src = currentOverlay; // Use the selected overlay
@@ -99,7 +108,7 @@ function addOverlayAndDownload(croppedCanvas) {
     };
 }
 
-const lang = getLanguageFromUrl();
+
 
 if (navigator.userAgent.includes('LinkedInApp') &&
     navigator.userAgent.includes('iPhone')) {
