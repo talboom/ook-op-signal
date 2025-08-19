@@ -80,7 +80,6 @@ function createCroppedCanvas(originalCanvas, image, spotlight) {
 }
 
 function addOverlayAndDownload(croppedCanvas) {
-    console.log(currentOverlay);
     const overlayImg = new Image();
     overlayImg.crossOrigin = 'anonymous'; // Fix CORS error for overlay
     overlayImg.src = currentOverlay; // Use the selected overlay
