@@ -170,7 +170,7 @@ const translations = {
         'whySignal.title': 'Varför byta till Signal?',
         'whySignal.whyChooseSignal': 'Varför välja Signal framför WhatsApp?',
         'whySignal.intro1': 'Att byta från WhatsApp till Signal kan verka enkelt, men i praktiken kan det vara besvärligt. Varför byta om ingen i ditt nätverk använder Signal? Och varför använda Signal om ingen annan gör det? Detta är ett problem som vi måste lösa tillsammans.',
-        'whySignal.intro2': 'För att lösa detta har jag utvecklat ett verktyg som låter dig lägga till en OcksåPåSignal-badge på din profilbild. Denna badge visar att du <strong><i>också</i></strong> finns <strong><i>på Signal</i></strong>, vilket gör det enklare för dina vänner och familj att hitta dig på Signal.',
+        'whySignal.intro2': 'För att lösa detta har jag utvecklat ett verktyg som låter dig lägga till en ocksapasignal-badge på din profilbild. Denna badge visar att du <strong><i>också</i></strong> finns <strong><i>på Signal</i></strong>, vilket gör det enklare för dina vänner och familj att hitta dig på Signal.',
         'whySignal.readMoreQuestion': 'Vill du veta mer om varför du borde byta till Signal?',
         'whySignal.readMore': 'Läs mer här',
         'whySignal.callToAction': 'Gör som vi! Tillsammans kan vi göra bytet enklare! 🚀',
@@ -304,7 +304,7 @@ function updateUrlLanguage(lang) {
         en: 'images/ookopsignal.png',
         nl: 'images/ookopsignal.png',
         de: 'images/auchaufsignal.png',
-        sv: 'images/ocksåpåsignal.png',
+        sv: 'images/ocksapasignal.png',
         fr: 'images/aussisursignal.png'
     }[lang];
 

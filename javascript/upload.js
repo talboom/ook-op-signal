@@ -127,7 +127,7 @@ function setupThumbnails() {
         en: 'images/ookopsignal.png',
         nl: 'images/ookopsignal.png',
         de: 'images/auchaufsignal.png',
-        sv: 'images/ocksåpåsignal.png',
+        sv: 'images/ocksapasignal.png',
         fr: 'images/aussisursignal.png'
     }[lang];
     document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
