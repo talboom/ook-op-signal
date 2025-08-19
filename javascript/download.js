@@ -10,7 +10,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
 const lang = getLanguageFromUrl();
 
-const currentOverlay = {
+let currentOverlay = {
     en: 'images/ookopsignal.png',
     nl: 'images/ookopsignal.png',
     de: 'images/auchaufsignal.png',
