@@ -123,8 +123,14 @@ function centerSpotlight(spotlight, imagePreview) {
 }
 
 function setupThumbnails() {
-    currentOverlay = 'images/ookopsignal.png'; // Default overlay
+    const currentOverlay = {
+        en: 'images/ookopsignal.png',
+        nl: 'images/ookopsignal.png',
+        de: 'images/auchaufsignal.png',
+        sv: 'images/ocksåpåsignal.png',
+        fr: 'images/aussisursignal.png'
+    }[lang];
     document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
     document.querySelectorAll('#thumbnails .thumbnail').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('#thumbnails .thumbnail')[0].classList.add('active');
+    document.querySelector('#thumbnails .thumbnail-' + lang).classList.add('active');
 }

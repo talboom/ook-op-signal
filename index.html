@@ -44,11 +44,20 @@
 							</span>
 						</button>
 						<div id="langDropdown" class="dropdown-content">
-							<button class="language-option" data-lang="nl">
-								<span>Nederlands</span>
+							<button class="language-option" data-lang="de">
+								<span>Deutsch</span>
 							</button>
 							<button class="language-option" data-lang="en">
 								<span>English</span>
+							</button>
+							<button class="language-option" data-lang="fr">
+								<span>French</span>
+							</button>
+							<button class="language-option" data-lang="nl">
+								<span>Nederlands</span>
+							</button>
+							<button class="language-option" data-lang="sv">
+								<span>Svenska</span>
 							</button>
 						</div>
 					</div>
@@ -65,7 +74,8 @@
 				<p class="mb-4" data-i18n="whySignal.intro1">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
 				<p class="mb-4" data-i18n="whySignal.intro2">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
 				<p class="mb-4"><strong data-i18n="whySignal.callToAction">Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
-				<p><span data-i18n="whySignal.readMoreQuestion">Meer weten waarom je zou overstappen naar Signal?</span> <a href="waaromSignal.html?lang={{lang}}" data-i18n="whySignal.readMore" data-internal="true">Lees hier meer</a>.</p>
+				<p class="mb-4"><span data-i18n="whySignal.readMoreQuestion">Meer weten waarom je zou overstappen naar Signal?</span> <a href="waaromSignal.html?lang={{lang}}" data-i18n="whySignal.readMore" data-internal="true">Lees hier meer</a>.</p>
+				<p class="has-text-grey is-italic is-size-7" data-i18n="translation.disclaimer"></p>
 			</span>
 		</div>
 		<div id="howItWorks" class="block block-emphasis mb-0 pb-0">
@@ -100,8 +110,26 @@
 					</div>
 				</div>
 				<div id="thumbnails">
-					<img src="images/ookopsignal.png" alt="Thumbnail 1" class="thumbnail active" data-overlay="images/ookopsignal.png">
-					<img src="images/alsoonsignal.png" alt="Thumbnail 2" class="thumbnail" data-overlay="images/alsoonsignal.png">
+					<div class="thumbnail-container">
+						<img src="images/ookopsignal.png" alt="Thumbnail NL" class="thumbnail active thumbnail-nl" data-overlay="images/ookopsignal.png">
+						<span>NL</span>
+					</div>
+					<div class="thumbnail-container">
+						<img src="images/alsoonsignal.png" alt="Thumbnail EN" class="thumbnail thumbnail-en" data-overlay="images/alsoonsignal.png">
+						<span>EN</span>
+					</div>
+					<div class="thumbnail-container">
+						<img src="images/auchaufsignal.png" alt="Thumbnail DE" class="thumbnail thumbnail-de" data-overlay="images/auchaufsignal.png">
+						<span>DE</span>
+					</div>
+					<div class="thumbnail-container">
+						<img src="images/aussisursignal.png" alt="Thumbnail FR" class="thumbnail thumbnail-fr" data-overlay="images/aussisursignal.png">
+						<span>FR</span>
+					</div>
+					<div class="thumbnail-container">
+						<img src="images/ocksåpåsignal.png" alt="Thumbnail SV" class="thumbnail thumbnail-sv" data-overlay="images/ocksåpåsignal.png">
+						<span>SV</span>
+					</div>
 				</div>
 				<div class="is-4 is-centered">
 					<p class="has-text-grey-light is-size-7 has-text-centered" data-i18n="note.privacy">

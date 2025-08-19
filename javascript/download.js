@@ -18,7 +18,10 @@ document.querySelectorAll('.thumbnail').forEach(thumbnail => {
         this.classList.add('active');
         // Update the current overlay
         currentOverlay = this.dataset.overlay;
-        document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
+        let signalBox = document.getElementById('signalBox');
+        if (signalBox) {
+            signalBox.style.backgroundImage = `url(${currentOverlay})`;
+        }
     });
 });
 

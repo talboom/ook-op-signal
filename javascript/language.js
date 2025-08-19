@@ -103,6 +103,165 @@ const translations = {
         'note.privacy': 'De foto wordt uitsluitend verwerkt in je browser en wordt dus nergens opgeslagen.',
         'note.download': 'Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.',
         'note.downloadLinkedin': 'Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.'
+    },
+    de: {
+        // Navigation
+        'logo.text': 'Auch auf<br/>Signal',
+        'nav.tool': 'Tool',
+        'nav.whySignal': 'Warum Signal?',
+        'language': 'Deutsch',
+        // Intro section
+        'intro.title': 'Wechsel zu Signal',
+        'intro.subtitle': '– und hilf anderen dabei, es dir gleichzutun!',
+        // Why Signal page
+        'whySignal.title': 'Warum zu Signal wechseln?',
+        'whySignal.whyChooseSignal': 'Warum Signal statt WhatsApp wählen?',
+        'whySignal.intro1': 'Der Wechsel von WhatsApp zu Signal erscheint einfach, aber in der Praxis kann es schwierig sein. Warum wechseln, wenn niemand in deinem Netzwerk Signal nutzt? Und warum Signal verwenden, wenn niemand wechselt? Dies ist ein Problem, das wir gemeinsam lösen müssen.',
+        'whySignal.intro2': 'Um dieses Problem anzugehen, habe ich ein Tool entwickelt, mit dem du deinem Profilbild einen AuchAufSignal-Badge hinzufügen kannst. Dieser Badge zeigt, dass du <strong><i>auch auf Signal</i></strong> erreichbar bist, was es deinen Freunden und Familie erleichtert, den Wechsel zu vollziehen.',
+        'whySignal.readMoreQuestion': 'Möchtest du mehr darüber erfahren, warum du zu Signal wechseln solltest?',
+        'whySignal.readMore': 'Hier mehr lesen',
+        'whySignal.callToAction': 'Mach mit! Gemeinsam können wir den Wechsel einfacher machen! 🚀',
+        'whySignal.findTool': 'Hier findest du das Tool',
+        'whySignal.whatIsSignal': 'Signal ist eine auf Privatsphäre ausgerichtete Messenger-App, die deine Kommunikation mit Ende-zu-Ende-Verschlüsselung schützt. Nur du und der Empfänger können die Nachrichten lesen - nicht einmal Signal selbst. Im Gegensatz zu vielen anderen Apps sammelt Signal keine unnötigen Daten. Der Code ist Open-Source und kann daher überprüft werden. Mit dem Wechsel wählst du eine sicherere und unabhängige Alternative, die deine Privatsphäre respektiert.',
+        'whySignal.whatsappIssue': 'WhatsApp gehört wie Facebook zu Meta. Große Tech-Unternehmen wie Meta und Google sammeln riesige Mengen an persönlichen Daten für gezielte Werbung und geben diese manchmal an Dritte weiter. Dies wirft ernsthafte Fragen zum Datenschutz und zur Kontrolle über unsere Informationen auf.',
+        'whySignal.signalAlternative': 'Signal bietet eine Alternative, die auf Privatsphäre und Sicherheit ausgerichtet ist und grundlegend anders arbeitet als traditionelle Big-Tech-Unternehmen:',
+        'whySignal.benefit1Title': 'Gemeinnützig',
+        'whySignal.benefit1': 'Gemeinnützig: Signal ist eine Stiftung ohne Aktionäre oder Risikokapitalgeber und wird durch Spenden statt durch Werbung finanziert.',
+        'whySignal.benefit2Title': 'Privatsphäre als Grundprinzip',
+        'whySignal.benefit2': 'Privatsphäre als Grundprinzip: Signal sammelt keine Nutzerdaten und bietet höchsten Datenschutz. Selbst WhatsApp und Facebook Messenger verwenden das Verschlüsselungsprotokoll von Signal.',
+        'whySignal.benefit3Title': 'Ethische Führung',
+        'whySignal.benefit3': 'Ethische Führung: CEO Meredith Whittaker setzt sich für ethische Technologie ein und kämpft gegen das Überwachungsmodell der Tech-Giganten.',
+        'whySignal.benefit4Title': 'Unabhängige Infrastruktur',
+        'whySignal.benefit4': 'Unabhängige Infrastruktur: Signal schützt Nutzer weltweit, ohne Kompromisse bei Privatsphäre oder Benutzerfreundlichkeit einzugehen.',
+        'whySignal.openSourceTitle': 'Open Source und Transparenz',
+        'whySignal.openSourceText': 'Signal ist Open-Source, sodass jeder den Code überprüfen kann, um sicherzustellen, dass es keine Hintertüren gibt – dies fördert Transparenz und Vertrauen.',
+        'whySignal.learnMoreTitle': 'Möchtest du mehr erfahren?',
+        'whySignal.learnMoreText': 'Hier sind einige interessante Artikel und Links, die erklären, warum der Wechsel zu Signal eine gute Idee ist:',
+        'whySignal.moreArticles': 'Sicherlich findest du auch andere lesenswerte Artikel, wenn du in anderen Medien suchst.',
+        // Get Signal section
+        'getSignal.title': 'Noch kein Signal?',
+        'getSignal.downloadAndroid': 'Für Android herunterladen',
+        'getSignal.downloadIos': 'Für iPhone/iPad herunterladen',
+        // How it works
+        'howItWorks.title': 'Wie funktioniert es?',
+        'howItWorks.step1': '1. 📸 Lade dein Profilbild hoch',
+        'howItWorks.step2': '2. 🖼️ Füge den Badge hinzu',
+        'howItWorks.step3': '3. 📲 Verwende es auf WhatsApp',
+        // Buttons
+        'button.upload': 'Foto hochladen',
+        'button.newPhoto': 'Neues Foto',
+        'button.download': 'Herunterladen',
+        // Note
+        'note.privacy': 'Das Foto wird ausschließlich in deinem Browser verarbeitet und nicht gespeichert.',
+        'note.download': 'Hinweis: Wenn der Download in der LinkedIn-App nicht funktioniert, öffne diese Seite in einem Browser.',
+        'note.downloadLinkedin': 'Hinweis: Wenn der Download in der LinkedIn-App nicht funktioniert, öffne diese Seite in einem Browser.',
+        'translation.disclaimer': 'Dieser Text wurde automatisch übersetzt. Bitte senden Sie mir eine E-Mail, wenn Sie Fehler bemerken.'
+    },
+    sv: {
+        // Navigation
+        'logo.text': 'Också på<br/>Signal',
+        'nav.tool': 'Verktyg',
+        'nav.whySignal': 'Varför Signal?',
+        'language': 'Svenska',
+        // Intro section
+        'intro.title': 'Byt till Signal',
+        'intro.subtitle': '– och hjälp andra att göra detsamma!',
+        // Why Signal page
+        'whySignal.title': 'Varför byta till Signal?',
+        'whySignal.whyChooseSignal': 'Varför välja Signal framför WhatsApp?',
+        'whySignal.intro1': 'Att byta från WhatsApp till Signal kan verka enkelt, men i praktiken kan det vara besvärligt. Varför byta om ingen i ditt nätverk använder Signal? Och varför använda Signal om ingen annan gör det? Detta är ett problem som vi måste lösa tillsammans.',
+        'whySignal.intro2': 'För att lösa detta har jag utvecklat ett verktyg som låter dig lägga till en OcksåPåSignal-badge på din profilbild. Denna badge visar att du <strong><i>också</i></strong> finns <strong><i>på Signal</i></strong>, vilket gör det enklare för dina vänner och familj att hitta dig på Signal.',
+        'whySignal.readMoreQuestion': 'Vill du veta mer om varför du borde byta till Signal?',
+        'whySignal.readMore': 'Läs mer här',
+        'whySignal.callToAction': 'Gör som vi! Tillsammans kan vi göra bytet enklare! 🚀',
+        'whySignal.findTool': 'Här hittar du verktyget',
+        'whySignal.whatIsSignal': 'Signal är en integritetsinriktad meddelandeapp som skyddar din kommunikation med slut-till-slut-kryptering. Endast du och mottagaren kan läsa meddelandena – inte ens Signal själva. Till skillnad från många andra appar samlar Signal inte in onödig information. Källkoden är öppen så att experter kan granska den. Genom att byta väljer du ett säkrare, oberoende alternativ som respekterar din integritet.',
+        'whySignal.whatsappIssue': 'WhatsApp, precis som Facebook, ägs av Meta. Stora teknikföretag som Meta och Google samlar in stora mängder personuppgifter som används för riktad reklam och kan dela dem med tredje part, vilket väcker allvarliga integritetsfrågor.',
+        'whySignal.signalAlternative': 'Signal erbjuder ett integritetsfrämjande, säkert alternativ och fungerar fundamentalt annorlunda än traditionella storföretag:',
+        'whySignal.benefit1Title': 'Ideell organisation',
+        'whySignal.benefit1': 'Ideell organisation: Signal är en stiftelse utan aktieägare eller riskkapitalister och finansieras genom donationer istället för reklam.',
+        'whySignal.benefit2Title': 'Integritet i fokus',
+        'whySignal.benefit2': 'Integritet i fokus: Signal samlar inte in användardata och erbjuder den högsta nivån av integritet. Även WhatsApp och Facebook Messenger använder Signals krypteringsprotokoll.',
+        'whySignal.benefit3Title': 'Etiskt ledarskap',
+        'whySignal.benefit3': 'Etiskt ledarskap: VD Meredith Whittaker förespråkar etisk teknik och bekämpar övervakning från storföretag.',
+        'whySignal.benefit4Title': 'Oberoende infrastruktur',
+        'whySignal.benefit4': 'Oberoende infrastruktur: Signal skyddar användare över hela världen utan att kompromissa med integritet eller användarvänlighet.',
+        'whySignal.openSourceTitle': 'Öppen källkod och transparens',
+        'whySignal.openSourceText': 'Signal har öppen källkod, vilket ger alla möjlighet att granska koden och verifiera att det inte finns några bakdörrar – detta bygger transparens och förtroende.',
+        'whySignal.learnMoreTitle': 'Vill du veta mer?',
+        'whySignal.learnMoreText': 'Läs mer om varför du bör byta till Signal i dessa artiklar och länkar:',
+        'whySignal.moreArticles': 'Du hittar säkert andra värdefulla artiklar om du söker i andra nyhetskällor.',
+        // Get Signal section
+        'getSignal.title': 'Ingen Signal-app?',
+        'getSignal.downloadAndroid': 'Ladda ner för Android',
+        'getSignal.downloadIos': 'Ladda ner för iPhone/iPad',
+        // How it works
+        'howItWorks.title': 'Hur fungerar det?',
+        'howItWorks.step1': '1. 📸 Ladda upp din profilbild',
+        'howItWorks.step2': '2. 🖼️ Lägg till märket',
+        'howItWorks.step3': '3. 📲 Använd på WhatsApp',
+        // Buttons
+        'button.upload': 'Ladda upp foto',
+        'button.newPhoto': 'Nytt foto',
+        'button.download': 'Ladda ner',
+        // Note
+        'note.privacy': 'Bilden bearbetas endast i din webbläsare och sparas ingenstans.',
+        'note.download': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
+        'note.downloadLinkedin': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
+        'translation.disclaimer': 'Denna text har översatts automatiskt. Vänligen skicka mig ett e-postmeddelande om du märker några fel.'
+    },
+    fr: {
+        // Navigation
+        'logo.text': 'Aussi sur<br/>Signal',
+        'nav.tool': 'Outil',
+        'nav.whySignal': 'Pourquoi Signal ?',
+        'language': 'Français',
+        // Intro section
+        'intro.title': 'Passez à Signal',
+        'intro.subtitle': '– et aidez les autres à en faire autant !',
+        // Why Signal page
+        'whySignal.title': 'Pourquoi passer à Signal ?',
+        'whySignal.whyChooseSignal': 'Pourquoi choisir Signal plutôt que WhatsApp ?',
+        'whySignal.intro1': 'Passer de WhatsApp à Signal peut sembler simple, mais en pratique, cela peut être compliqué. Pourquoi changer si personne dans votre réseau n\'utilise Signal ? Et pourquoi utiliser Signal si personne ne fait le changement ? C\'est un problème que nous devons résoudre ensemble.',
+        'whySignal.intro2': 'Pour résoudre ce problème, j\'ai développé un outil qui vous permet d\'ajouter un badge AussiSurSignal à votre photo de profil. Ce badge indique que vous êtes <strong><i>aussi sur Signal</i></strong>, ce qui facilite la transition pour vos amis et votre famille.',
+        'whySignal.readMoreQuestion': 'Vous voulez en savoir plus sur les raisons de passer à Signal ?',
+        'whySignal.readMore': 'Lire la suite',
+        'whySignal.callToAction': 'Rejoignez-nous ! Ensemble, nous pouvons faciliter la transition ! 🚀',
+        'whySignal.findTool': 'Trouver l\'outil',
+        'whySignal.whatIsSignal': 'Signal est une application de messagerie axée sur la confidentialité qui protège vos communications avec un chiffrement de bout en bout. Seul vous et votre destinataire pouvez lire les messages – pas même Signal. Contrairement à de nombreuses autres applications, Signal ne collecte aucune donnée inutile. Le code est open source, permettant ainsi aux experts de l\'examiner. En changeant, vous choisissez une alternative plus sûre et indépendante qui respecte votre vie privée.',
+        'whySignal.whatsappIssue': 'WhatsApp, comme Facebook, appartient à Meta. Les grandes entreprises technologiques comme Meta et Google collectent d\'énormes quantités de données personnelles pour de la publicité ciblée et peuvent les partager avec des tiers, ce qui soulève de sérieuses questions de confidentialité.',
+        'whySignal.signalAlternative': 'Signal propose une alternative axée sur la confidentialité et la sécurité, fonctionnant fondamentalement différemment des géants technologiques traditionnels :',
+        'whySignal.benefit1Title': 'À but non lucratif',
+        'whySignal.benefit1': 'À but non lucratif : Signal est une fondation sans actionnaires ni capital-risque, financée par des dons plutôt que par la publicité.',
+        'whySignal.benefit2Title': 'Confidentialité intégrée',
+        'whySignal.benefit2': 'Confidentialité intégrée : Signal ne collecte aucune donnée utilisateur et offre le plus haut niveau de protection de la vie privée. Même WhatsApp et Facebook Messenger utilisent le protocole de chiffrement de Signal.',
+        'whySignal.benefit3Title': 'Leadership éthique',
+        'whySignal.benefit3': 'Leadership éthique : La PDG Meredith Whittaker défend une technologie éthique et lutte contre la surveillance des géants technologiques.',
+        'whySignal.benefit4Title': 'Infrastructure indépendante',
+        'whySignal.benefit4': 'Infrastructure indépendante : Signal protège les utilisateurs du monde entier sans compromettre la confidentialité ni la convivialité.',
+        'whySignal.openSourceTitle': 'Open Source et Transparence',
+        'whySignal.openSourceText': 'Signal est open source, permettant à chacun d\'examiner le code et de vérifier l\'absence de portes dérobées – ce qui renforce la transparence et la confiance.',
+        'whySignal.learnMoreTitle': 'Vous voulez en savoir plus ?',
+        'whySignal.learnMoreText': 'Découvrez pourquoi passer à Signal est une bonne idée grâce à ces articles et liens :',
+        'whySignal.moreArticles': 'Vous trouverez certainement d\'autres articles intéressants en effectuant des recherches dans d\'autres médias.',
+        // Get Signal section
+        'getSignal.title': 'Pas encore Signal ?',
+        'getSignal.downloadAndroid': 'Télécharger pour Android',
+        'getSignal.downloadIos': 'Télécharger pour iPhone/iPad',
+        // How it works
+        'howItWorks.title': 'Comment ça marche ?',
+        'howItWorks.step1': '1. 📸 Téléchargez votre photo de profil',
+        'howItWorks.step2': '2. 🖼️ Ajoutez le badge',
+        'howItWorks.step3': '3. 📲 Utilisez sur WhatsApp',
+        // Buttons
+        'button.upload': 'Télécharger la photo',
+        'button.newPhoto': 'Nouvelle photo',
+        'button.download': 'Télécharger',
+        // Note
+        'note.privacy': 'La photo est traitée uniquement dans votre navigateur et n\'est stockée nulle part.',
+        'note.download': 'Remarque : Si le téléchargement ne fonctionne pas dans l\'application LinkedIn, ouvrez cette page dans un navigateur.',
+        'note.downloadLinkedin': 'Remarque : Si le téléchargement ne fonctionne pas dans l\'application LinkedIn, ouvrez cette page dans un navigateur.',
+        'translation.disclaimer': 'Ce texte a été traduit automatiquement. Veuillez m\'envoyer un e-mail si vous remarquez des erreurs.'
     }
 };
 
@@ -111,13 +270,13 @@ function getLanguageFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const langParam = params.get('lang');
     
-    if (langParam && ['en', 'nl'].includes(langParam)) {
+    if (langParam && ['en', 'nl', 'de', 'sv', 'fr'].includes(langParam)) {
         return langParam;
     }
     
     // Default to browser language or 'nl' if not specified
     const browserLang = navigator.language.split('-')[0];
-    return ['en', 'nl'].includes(browserLang) ? browserLang : 'nl';
+    return ['en', 'nl', 'de', 'sv', 'fr'].includes(browserLang) ? browserLang : 'nl';
 }
 
 // Update the URL with the selected language and update all navigation links
@@ -139,6 +298,27 @@ function updateUrlLanguage(lang) {
             item.classList.add('is-active');
         }
     });
+
+    // Set default overlay based on language
+    const defaultOverlay = {
+        en: 'images/ookopsignal.png',
+        nl: 'images/ookopsignal.png',
+        de: 'images/auchaufsignal.png',
+        sv: 'images/ocksåpåsignal.png',
+        fr: 'images/aussisursignal.png'
+    }[lang];
+
+    let signalBox = document.getElementById('signalBox');
+    if (signalBox) {
+        signalBox.style.backgroundImage = `url(${defaultOverlay})`;
+    }    
+
+    // active class
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    let thumbnail = document.querySelector('.thumbnail-' + lang);
+    if (thumbnail) {
+        thumbnail.classList.add('active');
+    }
 }
 
 // Update navigation links with current language
@@ -183,16 +363,15 @@ function setActiveLanguage(lang) {
     document.querySelectorAll('.language-option[data-lang]').forEach(button => {
         if (button.dataset.lang === lang) {
             button.classList.add('active');
+            // Update the selected language display
+            const selectedLangElement = document.querySelector('#selectedLang .language-option span');
+            if (selectedLangElement) {
+                selectedLangElement.textContent = button.querySelector('span').textContent;
+            }
         } else {
             button.classList.remove('active');
         }
     });
-    
-    // Update the selected language display
-    const selectedLangElement = document.querySelector('#selectedLang .language-option span');
-    if (selectedLangElement) {
-        selectedLangElement.textContent = translations[lang].language;
-    }
     
     // Update navigation links with current language
     updateNavigationLinks(lang);
