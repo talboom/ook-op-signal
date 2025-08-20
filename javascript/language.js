@@ -390,7 +390,7 @@ function initLanguage() {
         newButton.addEventListener('click', function(e) {
             e.stopPropagation();
             const lang = this.dataset.lang;
-            setLanguage(lang);
+            setLanguage(lang);navbarInactive
         });
     });
     
@@ -435,6 +435,17 @@ function setLanguage(lang) {
     
     // Close dropdown
     document.getElementById('toggleLang').classList.remove('is-active');
+    
+    // Close mobile menu if open
+    const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+    $navbarBurgers.forEach(el => {
+        el.classList.remove('is-active');
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        if ($target) {
+            $target.classList.remove('is-active');
+        }
+    });
 }
 
 // Initialize when DOM is loaded

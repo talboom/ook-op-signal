@@ -139,11 +139,13 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 3em;
+    top: 45px;
     background-color: white;
     border-radius: 5px;
     z-index: 5;
     margin: 0;
+    left: 0rem;
+    width: 100%;
 }
 
 
@@ -167,6 +169,7 @@ body {
     font-weight: 700;
     color: #3b45fd;
     background-color: rgba(59, 69, 253, 0.1);
+    width: 100%;
 }
 
 #langDropdown .language-option i {
@@ -580,12 +583,13 @@ canvas {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: #fff;
         top: 4.2em;
-        right: 100px;
+        right: 20px;
         border-radius: 5px;
+        width: 200px;
     }
 
-    #selectedLang {
-        top: 14px;
+    #topBar .navbar-item{
+        width: 95%; 
     }
 }
 
