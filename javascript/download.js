@@ -15,7 +15,9 @@ let currentOverlay = {
     nl: 'images/ookopsignal.png',
     de: 'images/auchaufsignal.png',
     sv: 'images/ocksapasignal.png',
-    fr: 'images/aussisursignal.png'
+    fr: 'images/aussisursignal.png',
+    es: 'images/tambienensignal.png',
+    it: 'images/anchesusignal.png'
 }[lang];
 
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {

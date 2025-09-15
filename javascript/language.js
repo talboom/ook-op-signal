@@ -13,7 +13,7 @@ const translations = {
         'whySignal.title': 'Why move to Signal?',
         'whySignal.whyChooseSignal': 'Why choose Signal over WhatsApp?',
         'whySignal.intro1': 'Moving from WhatsApp to Signal seems simple, but in practice it can be a hassle. Why move if no one in your network uses Signal? And why use Signal if no one moves? This is a problem we need to solve together.',
-        'whySignal.intro2': 'To tackle this issue, I have developed a tool that lets you add an AlsoonSignal badge to your profile picture. This badge shows that you\'re <strong><i>also on Signal</i></strong>, making it easier for your friends and family to find you on Signal.',
+        'whySignal.intro2': 'To tackle this issue, I have developed a tool that lets you add an AlsoonSignal-badge to your profile picture. This badge shows that you\'re <strong><i>also on Signal</i></strong>, making it easier for your friends and family to find you on Signal.',
         'whySignal.readMoreQuestion': 'Do you want to know more on why to move to Signal?',
         'whySignal.readMore': 'Read further',
         'whySignal.callToAction': 'Join us! Together we can make the move easier! 🚀',
@@ -412,7 +412,7 @@ function updateUrlLanguage(lang) {
         de: 'images/auchaufsignal.png',
         sv: 'images/ocksapasignal.png',
         fr: 'images/aussisursignal.png',
-        es: 'images/tambiensignal.png',
+        es: 'images/tambienensignal.png',
         it: 'images/anchesusignal.png'
     }[lang];
 
