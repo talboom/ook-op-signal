@@ -10,15 +10,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
 const lang = getLanguageFromUrl();
 
-let currentOverlay = {
-    en: 'images/ookopsignal.png',
-    nl: 'images/ookopsignal.png',
-    de: 'images/auchaufsignal.png',
-    sv: 'images/ocksapasignal.png',
-    fr: 'images/aussisursignal.png',
-    es: 'images/tambienensignal.png',
-    it: 'images/anchesusignal.png'
-}[lang];
+let currentOverlay = overlayImages[lang];
 
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {
     thumbnail.addEventListener('click', function () {
@@ -40,7 +32,7 @@ function processDownload(originalCanvas, image, spotlight) {
     img.crossOrigin = 'anonymous'; // Fix CORS error
     img.src = image.src;
 
-    img.onload = function() {(originalCanvas, image, spotlight);
+    img.onload = function() {
         const croppedCanvas = createCroppedCanvas(originalCanvas, image, spotlight);
         addOverlayAndDownload(croppedCanvas);
     };

@@ -406,15 +406,7 @@ function updateUrlLanguage(lang) {
     });
 
     // Set default overlay based on language
-    const defaultOverlay = {
-        en: 'images/ookopsignal.png',
-        nl: 'images/ookopsignal.png',
-        de: 'images/auchaufsignal.png',
-        sv: 'images/ocksapasignal.png',
-        fr: 'images/aussisursignal.png',
-        es: 'images/tambienensignal.png',
-        it: 'images/anchesusignal.png'
-    }[lang];
+    const defaultOverlay = overlayImages[lang];
 
     let signalBox = document.getElementById('signalBox');
     if (signalBox) {
@@ -555,6 +547,17 @@ function setLanguage(lang) {
         }
     });
 }
+
+// Overlay images mapping for different languages
+const overlayImages = {
+    en: 'images/alsoonsignal.png',
+    nl: 'images/ookopsignal.png',
+    de: 'images/auchaufsignal.png',
+    sv: 'images/ocksapasignal.png',
+    fr: 'images/aussisursignal.png',
+    es: 'images/tambienensignal.png',
+    it: 'images/anchesusignal.png'
+};
 
 // Initialize when DOM is loaded
 if (document.readyState === 'loading') {

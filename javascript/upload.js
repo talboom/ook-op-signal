@@ -123,15 +123,7 @@ function centerSpotlight(spotlight, imagePreview) {
 }
 
 function setupThumbnails() {
-    const currentOverlay = {
-        en: 'images/ookopsignal.png',
-        nl: 'images/ookopsignal.png',
-        de: 'images/auchaufsignal.png',
-        sv: 'images/ocksapasignal.png',
-        fr: 'images/aussisursignal.png',
-        es: 'images/tambienensignal.png',
-        it: 'images/anchesusignal.png'
-    }[lang];
+    const currentOverlay = overlayImages[lang];
     document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
     document.querySelectorAll('#thumbnails .thumbnail').forEach(t => t.classList.remove('active'));
     document.querySelector('#thumbnails .thumbnail-' + lang).classList.add('active');
