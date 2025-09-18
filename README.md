@@ -1,7 +1,6 @@
 # Also on Signal / Ook op Signal
 
-A tool to help users create profile pictures with an "Also on Signal"-badge, encouraging others to switch from Whatsapp to Signal (or any other Big Tech app). Available on [signalbadge.eu](https://www.signalbadge.eu)
- or [ookopsignal.eu](https://www.ookopsignal.eu).
+A tool to add an "Also on Signal"-badge to your Whatsapp profile, encouraging others to switch from Whatsapp to Signal (or any other Big Tech app). Available on [signalbadge.eu](https://www.signalbadge.eu) or [ookopsignal.eu](https://www.ookopsignal.eu).
 
 ## How it works
 1. Upload your profile picture.
