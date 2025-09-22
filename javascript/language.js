@@ -207,8 +207,7 @@ const translations = {
         // Note
         'note.privacy': 'Bilden bearbetas endast i din webbläsare och sparas ingenstans.',
         'note.download': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
-        'note.downloadLinkedin': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
-        'translation.disclaimer': 'Denna text har översatts automatiskt. Vänligen skicka mig ett e-postmeddelande om du märker några fel.'
+        'note.downloadLinkedin': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.'
     },
     es: {
         // Navigation
@@ -328,25 +327,25 @@ const translations = {
         // Why Signal page
         'whySignal.title': 'Perché passare a Signal?',
         'whySignal.whyChooseSignal': 'Perché scegliere Signal invece di WhatsApp?',
-        'whySignal.intro1': 'Passare da WhatsApp a Signal sembra semplice, ma nella pratica può essere complicato. Perché cambiare se nessuno nella tua rete usa Signal? E perché usare Signal se nessuno cambia? Questo è un problema che dobbiamo risolvere insieme.',
+        'whySignal.intro1': 'Passare da WhatsApp a Signal sembra semplice, ma nella pratica può essere complicato. Perché cambiare se nessuno di quelli che conosci usa Signal? E perché usare Signal se non lo usa nessuno? Questo è un problema che dobbiamo risolvere insieme.',
         'whySignal.intro2': 'Per affrontare questo problema, ho sviluppato uno strumento che ti permette di aggiungere un badge AncheSuSignal alla tua foto profilo. Questo badge mostra che sei <strong><i>anche su Signal</i></strong>, rendendo più facile per i tuoi amici e familiari trovarti su Signal.',
         'whySignal.readMoreQuestion': 'Vuoi saperne di più sul perché passare a Signal?',
-        'whySignal.readMore': 'Leggi di più',
+        'whySignal.readMore': 'Ulteriori informazioni',
         'whySignal.callToAction': 'Unisciti a noi! Insieme possiamo rendere il cambiamento più facile! 🚀',
         'whySignal.findTool': 'Vai allo strumento',
-        'whySignal.whatIsSignal': 'Signal è un\'app di messaggistica focalizzata sulla privacy che protegge la tua comunicazione con crittografia end-to-end. Solo tu e il destinatario potete leggere i messaggi. A differenza di molte altre app, Signal non raccoglie dati non necessari. È open source, quindi gli esperti possono esaminare il codice. Cambiando, scegli un\'alternativa più sicura e indipendente che rispetta la tua privacy.',
-        'whySignal.whatsappIssue': 'WhatsApp, come Facebook, fa parte di Meta. Le grandi aziende tecnologiche come Meta e Google raccolgono enormi quantità di dati personali utilizzati per pubblicità mirata e possono condividerli con terze parti, sollevando serie preoccupazioni sulla privacy.',
-        'whySignal.signalAlternative': 'Signal offre un\'alternativa sicura focalizzata sulla privacy e opera fondamentalmente diversamente dalle tradizionali Big Tech:',
+        'whySignal.whatIsSignal': 'Signal è un\'app di messaggistica focalizzata sulla privacy che protegge le tue comunicazioni con la crittografia end-to-end. Solo tu e il destinatario potete leggere i messaggi. A differenza di molte altre app, Signal non raccoglie dati non necessari. È open source, quindi gli esperti possono esaminare il codice sorgente. Cambiando app, scegli un\'alternativa più sicura e indipendente che rispetta la tua privacy.',
+        'whySignal.whatsappIssue': 'WhatsApp, come Facebook, fa parte di Meta. Le grandi aziende tecnologiche (Big Tech) come Meta e Google raccolgono enormi quantità di dati personali utilizzati per annunci personalizzati e li condividono con terze parti, sollevando serie preoccupazioni sulla privacy.',
+        'whySignal.signalAlternative': 'Signal offre un\'alternativa sicura focalizzata sulla privacy e opera in modo fondamentalmente diverso dalle tradizionali Big Tech:',
         'whySignal.benefit1Title': 'Senza scopo di lucro',
-        'whySignal.benefit1': 'Senza scopo di lucro: Signal è una fondazione senza azionisti o venture capitalist ed è finanziata da donazioni invece che da pubblicità.',
+        'whySignal.benefit1': 'Senza scopo di lucro: Signal è una fondazione senza azionisti o venture capitalist ed è finanziata dalle donazioni invece che dalla pubblicità.',
         'whySignal.benefit2Title': 'Privacy by design',
-        'whySignal.benefit2': 'Privacy by design: Signal non raccoglie dati degli utenti e offre il più alto livello di privacy. Anche WhatsApp e Facebook Messenger usano il protocollo di crittografia di Signal.',
+        'whySignal.benefit2': 'Privacy by design: Signal non raccoglie dati degli utenti e offre il più alto livello di privacy. Perfino WhatsApp e Facebook Messenger usano il protocollo di crittografia di Signal.',
         'whySignal.benefit3Title': 'Leadership etica',
         'whySignal.benefit3': 'Leadership etica: La CEO Meredith Whittaker sostiene la tecnologia etica e combatte la sorveglianza delle Big Tech.',
         'whySignal.benefit4Title': 'Infrastruttura indipendente',
         'whySignal.benefit4': 'Infrastruttura indipendente: Signal protegge gli utenti in tutto il mondo senza compromettere privacy o usabilità.',
         'whySignal.openSourceTitle': 'Open Source e Trasparenza',
-        'whySignal.openSourceText': 'Signal è open source, dando a tutti l\'opportunità di esaminare il codice e verificare che non ci siano backdoor – costruendo trasparenza e fiducia.',
+        'whySignal.openSourceText': 'Signal è open source, dando a tutti l\'opportunità di esaminare il codice e verificare che non ci siano backdoor – fornendo trasparenza e fiducia.',
         'whySignal.learnMoreTitle': 'Vuoi saperne di più?',
         'whySignal.learnMoreText': 'Leggi di più sul perché passare a Signal è una buona idea in questi articoli e link:',
         'whySignal.moreArticles': 'Troverai sicuramente altri articoli interessanti cercando in altri organi di informazione.',
