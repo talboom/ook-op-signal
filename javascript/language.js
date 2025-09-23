@@ -367,6 +367,59 @@ const translations = {
         'note.download': 'Nota: Se il download non funziona nell\'app LinkedIn, apri questa pagina in un browser.',
         'note.downloadLinkedin': 'Nota: Se il download non funziona nell\'app LinkedIn, apri questa pagina in un browser.',
         'translation.disclaimer': 'Questo testo è stato tradotto automaticamente. Ti prego di inviarmi un\'email se noti errori.'
+    },
+    pl: {
+        // Navigation
+        'logo.text': 'Również na<br/>Signal',
+        'nav.tool': 'Narzędzie',
+        'nav.whySignal': 'Dlaczego Signal?',
+        'language': 'Polski',
+        // Intro section
+        'intro.title': 'Przejdź na Signal',
+        'intro.subtitle': '– i pomóż innym zrobić to samo!',
+        // Why Signal page
+        'whySignal.title': 'Dlaczego przejść na Signal?',
+        'whySignal.whyChooseSignal': 'Dlaczego wybrać Signal zamiast WhatsApp?',
+        'whySignal.intro1': 'Przejście z WhatsApp na Signal wydaje się proste, ale w praktyce może być kłopotliwe. Po co przechodzić, jeśli nikt w twojej sieci nie używa Signal? I po co używać Signal, jeśli nikt nie przechodzi? To jest problem, który musimy rozwiązać razem.',
+        'whySignal.intro2': 'Aby rozwiązać ten problem, stworzyłem narzędzie, które pozwala dodać znaczek TakżenaNa Signal do twojego zdjęcia profilowego. Ten znaczek pokazuje, że jesteś <strong><i>również na Signal</i></strong>, ułatwiając przyjaciołom i rodzinie znalezienie cię na Signal.',
+        'whySignal.readMoreQuestion': 'Chcesz dowiedzieć się więcej o tym, dlaczego warto przejść na Signal?',
+        'whySignal.readMore': 'Czytaj dalej',
+        'whySignal.callToAction': 'Dołącz do nas! Razem możemy ułatwić przejście! 🚀',
+        'whySignal.findTool': 'Przejdź do narzędzia',
+        'whySignal.whatIsSignal': 'Signal to aplikacja do przesyłania wiadomości skupiona na prywatności, która chroni twoją komunikację za pomocą szyfrowania end-to-end. Tylko ty i odbiorca możecie czytać wiadomości. W przeciwieństwie do wielu innych aplikacji, Signal nie zbiera niepotrzebnych danych. Jest open-source, więc eksperci mogą sprawdzić kod. Przechodząc, wybierasz bezpieczniejszą, niezależną alternatywę, która szanuje twoją prywatność.',
+        'whySignal.whatsappIssue': 'WhatsApp, podobnie jak Facebook, jest częścią Meta. Wielkie firmy technologiczne, takie jak Meta i Google, zbierają ogromne ilości danych osobowych używanych do ukierunkowanych reklam i mogą dzielić się nimi z osobami trzecimi, co budzi poważne obawy dotyczące prywatności.',
+        'whySignal.signalAlternative': 'Signal oferuje alternatywę skupioną na prywatności i bezpieczeństwie, działając fundamentalnie inaczej niż tradycyjne Big Tech:',
+        'whySignal.benefit1Title': 'Organizacja non-profit',
+        'whySignal.benefit1': 'Organizacja non-profit: Signal to fundacja bez akcjonariuszy czy kapitału wysokiego ryzyka, finansowana z darowizn zamiast reklam.',
+        'whySignal.benefit2Title': 'Prywatność z założenia',
+        'whySignal.benefit2': 'Prywatność z założenia: Signal nie zbiera danych użytkowników i oferuje najwyższy poziom prywatności. Nawet WhatsApp i Facebook Messenger używają protokołu szyfrowania Signal.',
+        'whySignal.benefit3Title': 'Etyczne przywództwo',
+        'whySignal.benefit3': 'Etyczne przywództwo: CEO Meredith Whittaker wspiera etyczną technologię i walczy z inwigilacją Big Tech.',
+        'whySignal.benefit4Title': 'Niezależna infrastruktura',
+        'whySignal.benefit4': 'Niezależna infrastruktura: Signal chroni użytkowników na całym świecie bez kompromisów w zakresie prywatności czy użyteczności.',
+        'whySignal.openSourceTitle': 'Open Source i przejrzystość',
+        'whySignal.openSourceText': 'Signal ma otwarty kod źródłowy, dając każdemu możliwość przejrzenia kodu i sprawdzenia, czy nie ma backdoorów – budując przejrzystość i zaufanie.',
+        'whySignal.learnMoreTitle': 'Chcesz dowiedzieć się więcej?',
+        'whySignal.learnMoreText': 'Przeczytaj więcej o tym, dlaczego przejście na Signal to dobry pomysł w tych artykułach i linkach:',
+        'whySignal.moreArticles': 'Na pewno znajdziesz inne wartościowe artykuły, szukając w innych mediach.',
+        // Get Signal section
+        'getSignal.title': 'Nie masz Signal?',
+        'getSignal.downloadAndroid': 'Pobierz dla Android',
+        'getSignal.downloadIos': 'Pobierz dla iPhone/iPad',
+        // How it works
+        'howItWorks.title': 'Jak to działa?',
+        'howItWorks.step1': '1. 📸 Prześlij swoje zdjęcie profilowe',
+        'howItWorks.step2': '2. 🖼️ Dodaj znaczek',
+        'howItWorks.step3': '3. 📲 Użyj na WhatsApp',
+        // Buttons
+        'button.upload': 'Prześlij zdjęcie',
+        'button.newPhoto': 'Nowe zdjęcie',
+        'button.download': 'Pobierz',
+        // Note
+        'note.privacy': 'Zdjęcie jest przetwarzane tylko w twojej przeglądarce i nie jest nigdzie przechowywane.',
+        'note.download': 'Uwaga: Jeśli pobieranie nie działa w aplikacji LinkedIn, otwórz tę stronę w przeglądarce.',
+        'note.downloadLinkedin': 'Uwaga: Jeśli pobieranie nie działa w aplikacji LinkedIn, otwórz tę stronę w przeglądarce.',
+        'translation.disclaimer': 'Ten tekst został przetłumaczony automatycznie. Proszę o wysłanie mi e-maila, jeśli zauważysz błędy.'
     }
 };
 
@@ -375,13 +428,13 @@ function getLanguageFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const langParam = params.get('lang');
     
-    if (langParam && ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it'].includes(langParam)) {
+    if (langParam && ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl'].includes(langParam)) {
         return langParam;
     }
-    
+
     // Default to browser language or 'nl' if not specified
     const browserLang = navigator.language.split('-')[0];
-    return ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it'].includes(browserLang) ? browserLang : 'nl';
+    return ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl'].includes(browserLang) ? browserLang : 'nl';
 }
 
 // Update the URL with the selected language and update all navigation links
@@ -555,7 +608,8 @@ const overlayImages = {
     sv: 'images/ocksapasignal.png',
     fr: 'images/aussisursignal.png',
     es: 'images/tambienensignal.png',
-    it: 'images/anchesusignal.png'
+    it: 'images/anchesusignal.png',
+    pl: 'images/rownieznasignal.png'
 };
 
 // Initialize when DOM is loaded

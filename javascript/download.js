@@ -96,7 +96,7 @@ function addOverlayAndDownload(croppedCanvas) {
         const link = document.createElement('a');
         const imageData = croppedCanvas.toDataURL('image/png', 1.0);
         link.href = imageData;
-        link.download = 'wa_to_signal.png';
+        link.download = 'also_on_signal.png';
         link.click();
     };
 }

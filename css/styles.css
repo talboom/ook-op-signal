@@ -432,11 +432,14 @@ body {
 #thumbnails {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     background-color: #f5f5f5;
     padding: 5px 0;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .thumbnail-container {
@@ -472,9 +475,8 @@ body {
 
 .thumbnail-container:hover span {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
-
 
 .thumbnail:hover {
     border-color: #3b45fd;
