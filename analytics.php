@@ -34,17 +34,18 @@ try {
             $event_type = 'page_visits';
         }
 
-        // Increment the specified counter
+        // Increment counter for today's date
+        $today = date('Y-m-d');
         $stmt = $pdo->prepare("
-            INSERT INTO analytics (counter_name, count_value)
-            VALUES (?, 1)
+            INSERT INTO analytics (counter_name, count_value, date)
+            VALUES (?, 1, ?)
             ON DUPLICATE KEY UPDATE count_value = count_value + 1
         ");
-        $stmt->execute([$event_type]);
+        $stmt->execute([$event_type, $today]);
 
-        // Get updated count for the specific event
-        $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ?");
-        $stmt->execute([$event_type]);
+        // Get updated count for today
+        $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ? AND date = ?");
+        $stmt->execute([$event_type, $today]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         echo json_encode([
@@ -58,20 +59,23 @@ try {
         $event_type = $_GET['event'] ?? null;
 
         if ($event_type) {
-            // Get count for specific event
-            $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ?");
-            $stmt->execute([$event_type]);
+            // Get count for specific event today
+            $today = date('Y-m-d');
+            $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ? AND date = ?");
+            $stmt->execute([$event_type, $today]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
             echo json_encode([
                 'success' => true,
                 'event' => $event_type,
+                'date' => $today,
                 'count' => (int)($result['count_value'] ?? 0)
             ]);
         } else {
-            // Get counts for all events
-            $stmt = $pdo->prepare("SELECT counter_name, count_value FROM analytics WHERE counter_name IN ('page_visits', 'upload_clicks', 'download_clicks')");
-            $stmt->execute();
+            // Get today's counts for all events
+            $today = date('Y-m-d');
+            $stmt = $pdo->prepare("SELECT counter_name, count_value FROM analytics WHERE date = ? AND counter_name IN ('page_visits', 'upload_clicks', 'download_clicks')");
+            $stmt->execute([$today]);
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             $counts = [];
@@ -86,6 +90,7 @@ try {
 
             echo json_encode([
                 'success' => true,
+                'date' => $today,
                 'counts' => $counts
             ]);
         }
