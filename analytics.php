@@ -4,11 +4,19 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET');
 header('Access-Control-Allow-Headers: Content-Type');
 
-// Database configuration - UPDATE THESE VALUES
-$db_host = 'localhost';
-$db_name = 'your_database_name';
-$db_user = 'your_username';
-$db_pass = 'your_password';
+// Load environment variables
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    foreach ($env as $key => $value) {
+        $_ENV[$key] = $value;
+    }
+}
+
+// Database configuration from environment
+$db_host = $_ENV['DB_HOST'] ?? 'localhost';
+$db_name = $_ENV['DB_NAME'] ?? '';
+$db_user = $_ENV['DB_USER'] ?? '';
+$db_pass = $_ENV['DB_PASS'] ?? '';
 
 try {
     // Connect to database
