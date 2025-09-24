@@ -41,20 +41,12 @@
         // Add event listeners for upload buttons
         const initialUploadButton = document.getElementById('initialUploadButton');
         const uploadButton = document.getElementById('uploadButton');
-        const initialImageInput = document.getElementById('initialImageInput');
-        const imageInput = document.getElementById('imageInput');
 
         if (initialUploadButton) {
             initialUploadButton.addEventListener('click', trackUploadClick);
         }
         if (uploadButton) {
             uploadButton.addEventListener('click', trackUploadClick);
-        }
-        if (initialImageInput) {
-            initialImageInput.addEventListener('change', trackUploadClick);
-        }
-        if (imageInput) {
-            imageInput.addEventListener('change', trackUploadClick);
         }
 
         // Add event listener for download button
