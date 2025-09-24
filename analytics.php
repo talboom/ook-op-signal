@@ -16,34 +16,71 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // Increment visit counter
+        // Get the event type from POST data
+        $input = json_decode(file_get_contents('php://input'), true);
+        $event_type = $input['event'] ?? 'page_visits';
+
+        // Validate event type
+        $allowed_events = ['page_visits', 'upload_clicks', 'download_clicks'];
+        if (!in_array($event_type, $allowed_events)) {
+            $event_type = 'page_visits';
+        }
+
+        // Increment the specified counter
         $stmt = $pdo->prepare("
             INSERT INTO analytics (counter_name, count_value)
-            VALUES ('page_visits', 1)
+            VALUES (?, 1)
             ON DUPLICATE KEY UPDATE count_value = count_value + 1
         ");
-        $stmt->execute();
+        $stmt->execute([$event_type]);
 
-        // Get updated count
-        $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = 'page_visits'");
-        $stmt->execute();
+        // Get updated count for the specific event
+        $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ?");
+        $stmt->execute([$event_type]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         echo json_encode([
             'success' => true,
+            'event' => $event_type,
             'count' => (int)$result['count_value']
         ]);
 
     } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        // Just get current count without incrementing
-        $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = 'page_visits'");
-        $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        // Get counts for all events or a specific event
+        $event_type = $_GET['event'] ?? null;
 
-        echo json_encode([
-            'success' => true,
-            'count' => (int)($result['count_value'] ?? 0)
-        ]);
+        if ($event_type) {
+            // Get count for specific event
+            $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ?");
+            $stmt->execute([$event_type]);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            echo json_encode([
+                'success' => true,
+                'event' => $event_type,
+                'count' => (int)($result['count_value'] ?? 0)
+            ]);
+        } else {
+            // Get counts for all events
+            $stmt = $pdo->prepare("SELECT counter_name, count_value FROM analytics WHERE counter_name IN ('page_visits', 'upload_clicks', 'download_clicks')");
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            $counts = [];
+            foreach ($results as $row) {
+                $counts[$row['counter_name']] = (int)$row['count_value'];
+            }
+
+            // Ensure all counters exist in response
+            $counts['page_visits'] = $counts['page_visits'] ?? 0;
+            $counts['upload_clicks'] = $counts['upload_clicks'] ?? 0;
+            $counts['download_clicks'] = $counts['download_clicks'] ?? 0;
+
+            echo json_encode([
+                'success' => true,
+                'counts' => $counts
+            ]);
+        }
 
     } else {
         http_response_code(405);
