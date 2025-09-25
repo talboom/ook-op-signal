@@ -36,12 +36,23 @@ try {
 
         // Increment counter for today's date
         $today = date('Y-m-d');
+        
+        // First try to update existing record
         $stmt = $pdo->prepare("
-            INSERT INTO analytics (counter_name, count_value, date)
-            VALUES (?, 1, ?)
-            ON DUPLICATE KEY UPDATE count_value = count_value + 1
+            UPDATE analytics 
+            SET count_value = count_value + 1 
+            WHERE counter_name = ? AND date = ?
         ");
         $stmt->execute([$event_type, $today]);
+        
+        // If no rows were updated (record doesn't exist), insert new record
+        if ($stmt->rowCount() == 0) {
+            $stmt = $pdo->prepare("
+                INSERT INTO analytics (counter_name, count_value, date) 
+                VALUES (?, 1, ?)
+            ");
+            $stmt->execute([$event_type, $today]);
+        }
 
         // Get updated count for today
         $stmt = $pdo->prepare("SELECT count_value FROM analytics WHERE counter_name = ? AND date = ?");
