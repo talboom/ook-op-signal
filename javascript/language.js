@@ -609,7 +609,7 @@ const overlayImages = {
     fr: 'images/aussisursignal.png',
     es: 'images/tambienensignal.png',
     it: 'images/anchesusignal.png',
-    pl: 'images/rownieznasignal.png'
+    pl: 'images/rownieznasignal2.png'
 };
 
 // Initialize when DOM is loaded
