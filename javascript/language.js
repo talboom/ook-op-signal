@@ -39,7 +39,7 @@ const translations = {
         'getSignal.downloadAndroid': 'Download for Android',
         'getSignal.downloadIos': 'Download for iPhone/iPad',
         // How it works
-        'howItWorks.title': 'How does it work?',
+        'howItWorks.title': 'How it works?',
         'howItWorks.step1': '1. 📸 Upload your profile picture',
         'howItWorks.step2': '2. 🖼️ Add the badge',
         'howItWorks.step3': '3. 📲 Use on WhatsApp',
