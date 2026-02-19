@@ -18,6 +18,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Open `index.html` directly in a browser or serve with any static file server. No build step required.
 
+## Important: No smart quotes in JavaScript
+
+When editing `javascript/language.js` (or any `.js` file), never use typographic/curly quotes (`'` `'` `"` `"`) — only straight ASCII quotes (`'` `"`). The user's editor may auto-convert quotes on save. After writing to any JS file, verify the output contains only straight quotes. If curly quotes slip in, the entire file will fail to parse and all downstream scripts will break.
+
 ## Architecture
 
 **Two pages:**
