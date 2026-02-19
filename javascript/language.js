@@ -50,7 +50,8 @@ const translations = {
         // Note
         'note.privacy': 'The photo is processed only in your browser and is not stored anywhere.',
         'note.download': 'Note: If the download doesn\'t work in the LinkedIn app, open this page in a browser.',
-        'note.downloadLinkedin': 'Note: If the download doesn\'t work in the LinkedIn app, open this page in a browser.'
+        'note.downloadLinkedin': 'Note: If the download doesn\'t work in the LinkedIn app, open this page in a browser.',
+        'badge.english': 'English'
     },
     nl: {
         // Navigation
@@ -102,7 +103,8 @@ const translations = {
         // Note
         'note.privacy': 'De foto wordt uitsluitend verwerkt in je browser en wordt dus nergens opgeslagen.',
         'note.download': 'Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.',
-        'note.downloadLinkedin': 'Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.'
+        'note.downloadLinkedin': 'Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.',
+        'badge.english': 'Engels'
     },
     de: {
         // Navigation
@@ -155,7 +157,8 @@ const translations = {
         'note.privacy': 'Das Foto wird ausschließlich in deinem Browser verarbeitet und nicht gespeichert.',
         'note.download': 'Hinweis: Wenn der Download in der LinkedIn-App nicht funktioniert, öffne diese Seite in einem Browser.',
         'note.downloadLinkedin': 'Hinweis: Wenn der Download in der LinkedIn-App nicht funktioniert, öffne diese Seite in einem Browser.',
-        'translation.disclaimer': 'Dieser Text wurde automatisch übersetzt. Bitte senden Sie mir eine E-Mail, wenn Sie Fehler bemerken.'
+        'translation.disclaimer': 'Dieser Text wurde automatisch übersetzt. Bitte senden Sie mir eine E-Mail, wenn Sie Fehler bemerken.',
+        'badge.english': 'Englisch'
     },
     sv: {
         // Navigation
@@ -207,7 +210,8 @@ const translations = {
         // Note
         'note.privacy': 'Bilden bearbetas endast i din webbläsare och sparas ingenstans.',
         'note.download': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
-        'note.downloadLinkedin': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.'
+        'note.downloadLinkedin': 'Obs: Om nedladdningen inte fungerar i LinkedIn-appen, öppna den här sidan i en webbläsare.',
+        'badge.english': 'Engelska'
     },
     es: {
         // Navigation
@@ -260,7 +264,8 @@ const translations = {
         'note.privacy': 'La foto se procesa solo en tu navegador y no se almacena en ningún lugar.',
         'note.download': 'Nota: Si la descarga no funciona en la aplicación de LinkedIn, abre esta página en un navegador.',
         'note.downloadLinkedin': 'Nota: Si la descarga no funciona en la aplicación de LinkedIn, abre esta página en un navegador.',
-        'translation.disclaimer': 'Este texto ha sido traducido automáticamente. Por favor, envíame un correo electrónico si notas algún error.'
+        'translation.disclaimer': 'Este texto ha sido traducido automáticamente. Por favor, envíame un correo electrónico si notas algún error.',
+        'badge.english': 'Inglés'
     },
     fr: {
         // Navigation
@@ -313,7 +318,8 @@ const translations = {
         'note.privacy': 'La photo est traitée uniquement dans votre navigateur et n\'est stockée nulle part.',
         'note.download': 'Remarque : Si le téléchargement ne fonctionne pas dans l\'application LinkedIn, ouvrez cette page dans un navigateur.',
         'note.downloadLinkedin': 'Remarque : Si le téléchargement ne fonctionne pas dans l\'application LinkedIn, ouvrez cette page dans un navigateur.',
-        'translation.disclaimer': 'Ce texte a été traduit automatiquement. Veuillez m\'envoyer un e-mail si vous remarquez des erreurs.'
+        'translation.disclaimer': 'Ce texte a été traduit automatiquement. Veuillez m\'envoyer un e-mail si vous remarquez des erreurs.',
+        'badge.english': 'Anglais'
     },
     it: {
         // Navigation
@@ -366,7 +372,8 @@ const translations = {
         'note.privacy': 'La foto viene elaborata solo nel tuo browser e non viene memorizzata da nessuna parte.',
         'note.download': 'Nota: Se il download non funziona nell\'app LinkedIn, apri questa pagina in un browser.',
         'note.downloadLinkedin': 'Nota: Se il download non funziona nell\'app LinkedIn, apri questa pagina in un browser.',
-        'translation.disclaimer': 'Questo testo è stato tradotto automaticamente. Ti prego di inviarmi un\'email se noti errori.'
+        'translation.disclaimer': 'Questo testo è stato tradotto automaticamente. Ti prego di inviarmi un\'email se noti errori.',
+        'badge.english': 'Inglese'
     },
     pl: {
         // Navigation
@@ -419,7 +426,8 @@ const translations = {
         'note.privacy': 'Zdjęcie jest przetwarzane tylko w twojej przeglądarce i nie jest nigdzie przechowywane.',
         'note.download': 'Uwaga: Jeśli pobieranie nie działa w aplikacji LinkedIn, otwórz tę stronę w przeglądarce.',
         'note.downloadLinkedin': 'Uwaga: Jeśli pobieranie nie działa w aplikacji LinkedIn, otwórz tę stronę w przeglądarce.',
-        'translation.disclaimer': 'Ten tekst został przetłumaczony automatycznie. Proszę o wysłanie mi e-maila, jeśli zauważysz błędy.'
+        'translation.disclaimer': 'Ten tekst został przetłumaczony automatycznie. Proszę o wysłanie mi e-maila, jeśli zauważysz błędy.',
+        'badge.english': 'Angielski'
     },
     pt: {
         // Navigation
@@ -472,7 +480,8 @@ const translations = {
         'note.privacy': 'A foto é processada apenas no seu navegador e não é armazenada em nenhum lugar.',
         'note.download': 'Nota: Se o download não funcionar no aplicativo do LinkedIn, abra esta página em um navegador.',
         'note.downloadLinkedin': 'Nota: Se o download não funcionar no aplicativo do LinkedIn, abra esta página em um navegador.',
-        'translation.disclaimer': 'Este texto foi traduzido automaticamente. Por favor, envie-me um e-mail se notar erros.'
+        'translation.disclaimer': 'Este texto foi traduzido automaticamente. Por favor, envie-me um e-mail se notar erros.',
+        'badge.english': 'Inglês'
     },
     cs: {
         // Navigation
@@ -525,7 +534,8 @@ const translations = {
         'note.privacy': 'Fotka je zpracována pouze ve vašem prohlížeči a není nikde uložena.',
         'note.download': 'Poznámka: Pokud stahování nefunguje v aplikaci LinkedIn, otevřete tuto stránku v prohlížeči.',
         'note.downloadLinkedin': 'Poznámka: Pokud stahování nefunguje v aplikaci LinkedIn, otevřete tuto stránku v prohlížeči.',
-        'translation.disclaimer': 'Tento text byl automaticky přeložen. Pokud si všimnete chyb, pošlete mi prosím e-mail.'
+        'translation.disclaimer': 'Tento text byl automaticky přeložen. Pokud si všimnete chyb, pošlete mi prosím e-mail.',
+        'badge.english': 'Angličtina'
     }
 };
 
@@ -690,7 +700,10 @@ function setLanguage(lang) {
     
     // Update UI state
     setActiveLanguage(lang);
-    
+
+    // Filter badge thumbnails
+    filterThumbnails(lang);
+
     // Close dropdown
     document.getElementById('toggleLang').classList.remove('is-active');
     
@@ -702,6 +715,29 @@ function setLanguage(lang) {
         const $target = document.getElementById(target);
         if ($target) {
             $target.classList.remove('is-active');
+        }
+    });
+}
+
+// Filter badge thumbnails to show only current language + English
+function filterThumbnails(lang) {
+    document.querySelectorAll('.thumbnail-container[data-badge-lang]').forEach(container => {
+        const badgeLang = container.dataset.badgeLang;
+        if (lang === 'en') {
+            container.style.display = badgeLang === 'en' ? '' : 'none';
+            container.style.order = '';
+        } else {
+            const visible = badgeLang === lang || badgeLang === 'en';
+            container.style.display = visible ? '' : 'none';
+            // Local language first (left), English second (right)
+            container.style.order = badgeLang === lang ? '1' : '2';
+        }
+        // Translate the English badge label to the current language
+        if (badgeLang === 'en') {
+            const label = container.querySelector('span');
+            if (label && translations[lang] && translations[lang]['badge.english']) {
+                label.textContent = translations[lang]['badge.english'];
+            }
         }
     });
 }

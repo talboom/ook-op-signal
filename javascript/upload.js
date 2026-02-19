@@ -127,4 +127,5 @@ function setupThumbnails() {
     document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
     document.querySelectorAll('#thumbnails .thumbnail').forEach(t => t.classList.remove('active'));
     document.querySelector('#thumbnails .thumbnail-' + lang).classList.add('active');
+    filterThumbnails(lang);
 }

@@ -12,13 +12,14 @@
 	<meta property="og:url" content="https://ookopsignal.eu">
 	<meta property="og:type" content="website">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-	<link rel="stylesheet" href="css/styles.css?v=0.6">
+	<!-- Fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css?v=2.0">
 	<link rel="icon" type="images/png" href="images/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-	<nav id="topBar" class="navbar"  role="navigation" aria-label="main navigation">
+	<nav id="topBar" role="navigation" aria-label="main navigation">
 		<div class="navbar-container">
 			<div class="navbar-brand">
 				<a href="index.html?lang={{lang}}" id="title" data-i18n="logo.text" data-internal="true">Ook op<br/>Signal</a>
@@ -29,198 +30,188 @@
 				<span aria-hidden="true"></span>
 			</a>
 			<div class="navbar-menu" id="navMenu">
-				<div class="navbar-end">
-					<a href="index.html?lang={{lang}}" class="navbar-item" data-i18n="nav.tool" data-internal="true" id="nav-tool">
-						Tool
-					</a>
-					<a href="waaromSignal.html?lang={{lang}}" class="navbar-item" data-i18n="nav.whySignal" data-internal="true" id="nav-why">
-						Waarom Signal?
-					</a>
-					<hr class="navbar-divider">
-					<div id="toggleLang" class="navbar-item">
-						<button id="selectedLang" aria-label="Select language">
-							<span class="language-option">
-								<span>Nederlands</span>
-							</span>
+				<a href="index.html?lang={{lang}}" class="navbar-item" data-i18n="nav.tool" data-internal="true" id="nav-tool">
+					Tool
+				</a>
+				<a href="waaromSignal.html?lang={{lang}}" class="navbar-item" data-i18n="nav.whySignal" data-internal="true" id="nav-why">
+					Waarom Signal?
+				</a>
+				<hr class="navbar-divider">
+				<div id="toggleLang" class="navbar-item">
+					<button id="selectedLang" aria-label="Select language">
+						<svg class="nav-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+						<span class="language-option">
+							<span>Nederlands</span>
+						</span>
+					</button>
+					<div id="langDropdown" class="dropdown-content">
+						<button class="language-option" data-lang="cs">
+							<span>Čeština</span>
 						</button>
-						<div id="langDropdown" class="dropdown-content">
-							<button class="language-option" data-lang="cs">
-								<span>Čeština</span>
-							</button>
-							<button class="language-option" data-lang="de">
-								<span>Deutsch</span>
-							</button>
-							<button class="language-option" data-lang="en">
-								<span>English</span>
-							</button>
-							<button class="language-option" data-lang="es">
-								<span>Español</span>
-							</button>
-							<button class="language-option" data-lang="fr">
-								<span>Française</span>
-							</button>
-							<button class="language-option" data-lang="it">
-								<span>Italiano</span>
-							</button>
-							<button class="language-option" data-lang="nl">
-								<span>Nederlands</span>
-							</button>
-							<button class="language-option" data-lang="pl">
-								<span>Polski</span>
-							</button>
-							<button class="language-option" data-lang="pt">
-								<span>Português</span>
-							</button>
-							<button class="language-option" data-lang="sv">
-								<span>Svenska</span>
-							</button>
-						</div>
+						<button class="language-option" data-lang="de">
+							<span>Deutsch</span>
+						</button>
+						<button class="language-option" data-lang="en">
+							<span>English</span>
+						</button>
+						<button class="language-option" data-lang="es">
+							<span>Español</span>
+						</button>
+						<button class="language-option" data-lang="fr">
+							<span>Française</span>
+						</button>
+						<button class="language-option" data-lang="it">
+							<span>Italiano</span>
+						</button>
+						<button class="language-option" data-lang="nl">
+							<span>Nederlands</span>
+						</button>
+						<button class="language-option" data-lang="pl">
+							<span>Polski</span>
+						</button>
+						<button class="language-option" data-lang="pt">
+							<span>Português</span>
+						</button>
+						<button class="language-option" data-lang="sv">
+							<span>Svenska</span>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
 	<div id="container">
-		
-		<div id="intro" class="block">
-			<h1 id="introTitle" class="title is-3" data-i18n="intro.title">Stap over op Signal</h1>
-			<h2 class="subtitle is-5 mb-4" data-i18n="intro.subtitle">– en help anderen hetzelfde te doen!</h2>
-			<span id="introText">
-				<p class="mb-4" data-i18n="whySignal.intro1">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
-				<p class="mb-4" data-i18n="whySignal.intro2">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
-				<p class="mb-4"><strong data-i18n="whySignal.callToAction">Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
-				<p class="mb-4"><span data-i18n="whySignal.readMoreQuestion">Meer weten waarom je zou overstappen naar Signal?</span> <a href="waaromSignal.html?lang={{lang}}" data-i18n="whySignal.readMore" data-internal="true">Lees hier meer</a>.</p>
-				<p class="has-text-grey is-italic is-size-7" data-i18n="translation.disclaimer"></p>
-			</span>
-		</div>
-		<div id="howItWorks" class="block block-emphasis mb-0 pb-0">
-			<div class="columns is-centered">
-				<div class="column is-flex is-4 is-align-items-center"> 
-					<div id="howItWorksText">
-						<h3 class="title mb-2 has-text-left" data-i18n="howItWorks.title">Hoe werkt het?</h3>
-						<ul class="has-text-left mb-0">
-							<li data-i18n="howItWorks.step1">1. 📸 Upload je profielfoto</li>
-							<li data-i18n="howItWorks.step2">2. 🖼️ Voeg de badge toe</li>
-							<li data-i18n="howItWorks.step3">3. 📲 Gebruik op WhatsApp</li>
-						</ul>
-					</div>
+
+		<section id="intro">
+			<div class="hero-blob hero-blob-1"></div>
+			<div class="hero-blob hero-blob-2"></div>
+			<div class="container">
+				<h1 id="introTitle" data-i18n="intro.title">Stap over op Signal</h1>
+				<h2 class="hero-subtitle" data-i18n="intro.subtitle">– en help anderen hetzelfde te doen!</h2>
+				<div id="introText">
+					<p data-i18n="whySignal.intro1">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
+					<p data-i18n="whySignal.intro2">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
+					<p><strong data-i18n="whySignal.callToAction">Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀</strong></p>
+					<p><span data-i18n="whySignal.readMoreQuestion">Meer weten waarom je zou overstappen naar Signal?</span> <a href="waaromSignal.html?lang={{lang}}" data-i18n="whySignal.readMore" data-internal="true">Lees hier meer</a>.</p>
+					<p class="disclaimer" data-i18n="translation.disclaimer"></p>
 				</div>
-				<div class="column is-6">
+			</div>
+		</section>
+
+		<section id="howItWorks">
+			<div class="container">
+				<div id="howItWorksText">
+					<h3 data-i18n="howItWorks.title">Hoe werkt het?</h3>
+					<ul>
+						<li data-i18n="howItWorks.step1">1. 📸 Upload je profielfoto</li>
+						<li data-i18n="howItWorks.step2">2. 🖼️ Voeg de badge toe</li>
+						<li data-i18n="howItWorks.step3">3. 📲 Gebruik op WhatsApp</li>
+					</ul>
+				</div>
+				<div class="example-image">
 					<img src="images/example.png" alt="Example image">
 				</div>
 			</div>
-		</div>
-		<div id="imageBlock" class="block">
+		</section>
+
+		<section id="imageBlock">
 			<div id="imageEditor">
 				<div id="imagePreview">
 					<div class="upload-form">
 						<form id="initialUploadForm">
-							<div class="file">
-								<label class="file-label">
-									<input class="file-input" type="file" id="initialImageInput" accept=".png, .jpg, .jpeg, capture=environment*">
-										<span id="initialUploadButton" class="button is-info" data-i18n="button.upload">Upload foto</span>
-								</label>
-							</div>
+							<label class="file-label">
+								<input class="file-input" type="file" id="initialImageInput" accept=".png, .jpg, .jpeg, capture=environment*">
+								<span id="initialUploadButton" data-i18n="button.upload">Upload foto</span>
+							</label>
 						</form>
 					</div>
 				</div>
-				<div class="is-4 is-centered">
-					<p class="has-text-grey-light is-size-7 has-text-centered" data-i18n="note.privacy">
-						De foto wordt uitsluitend verwerkt in je browser en wordt dus nergens opgeslagen.
-					</p>
-				</div>
+				<p class="privacy-note" data-i18n="note.privacy">
+					De foto wordt uitsluitend verwerkt in je browser en wordt dus nergens opgeslagen.
+				</p>
 				<div id="thumbnails">
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="cs">
 						<img src="images/takenasignalu.png" alt="Thumbnail CS" class="thumbnail thumbnail-cs" data-overlay="images/takenasignalu.png">
-						<span>CS</span>
+						<span>Čeština</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="de">
 						<img src="images/auchaufsignal.png" alt="Thumbnail DE" class="thumbnail thumbnail-de" data-overlay="images/auchaufsignal.png">
-						<span>DE</span>
+						<span>Deutsch</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="en">
 						<img src="images/alsoonsignal.png" alt="Thumbnail EN" class="thumbnail thumbnail-en" data-overlay="images/alsoonsignal.png">
-						<span>EN</span>
+						<span>English</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="es">
 						<img src="images/tambienensignal.png" alt="Thumbnail ES" class="thumbnail thumbnail-es" data-overlay="images/tambienensignal.png">
-						<span>ES</span>
+						<span>Español</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="fr">
 						<img src="images/aussisursignal.png" alt="Thumbnail FR" class="thumbnail thumbnail-fr" data-overlay="images/aussisursignal.png">
-						<span>FR</span>
+						<span>Français</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="it">
 						<img src="images/anchesusignal.png" alt="Thumbnail IT" class="thumbnail thumbnail-it" data-overlay="images/anchesusignal.png">
-						<span>IT</span>
+						<span>Italiano</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="nl">
 						<img src="images/ookopsignal.png" alt="Thumbnail NL" class="thumbnail active thumbnail-nl" data-overlay="images/ookopsignal.png">
-						<span>NL</span>
+						<span>Nederlands</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="pl">
 						<img src="images/rownieznasignal2.png" alt="Thumbnail PL" class="thumbnail thumbnail-pl" data-overlay="images/rownieznasignal2.png">
-						<span>PL</span>
+						<span>Polski</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="pt">
 						<img src="images/tambemnosignal.png" alt="Thumbnail PT" class="thumbnail thumbnail-pt" data-overlay="images/tambemnosignal.png">
-						<span>PT</span>
+						<span>Português</span>
 					</div>
-					<div class="thumbnail-container">
+					<div class="thumbnail-container" data-badge-lang="sv">
 						<img src="images/ocksapasignal.png" alt="Thumbnail SV" class="thumbnail thumbnail-sv" data-overlay="images/ocksapasignal.png">
-						<span>SV</span>
+						<span>Svenska</span>
 					</div>
 				</div>
-			</div> 
-		</div>
-		<div class="block">
-			<div id="buttons" class="columns is-centered">
-				<div class="column is-flex is-3 is-align-items-center">
-					<button id="downloadButton" class="button is-success" data-i18n="button.download">Download</button>
-				</div>
-				<div class="column is-flex is-3 is-align-items-center">
-					<form id="uploadForm">
-						<form id="initialUploadForm">
-							<div class="file">
-								<label class="file-label">
-									<input class="file-input" type="file" id="imageInput" accept=".png, .jpg, .jpeg, capture=environment">
-									<span id="uploadButton" class="button is-light" data-i18n="button.newPhoto">Nieuwe foto</span>
-								</label>
-							</div>
-					</form>
-				</div>
 			</div>
-			<div>
-				<div id="downloadNote" class="notification is-info is-light">
-					<p id="noteText" class="is-size-7" data-i18n="note.download">Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.</p>
-				</div>
+		</section>
+
+		<section style="width: 100%; padding: 0 24px 24px; background-color: var(--color-white);">
+			<div id="buttons">
+				<button id="downloadButton" data-i18n="button.download">Download</button>
+				<form id="uploadForm">
+					<label class="file-label">
+						<input class="file-input" type="file" id="imageInput" accept=".png, .jpg, .jpeg, capture=environment">
+						<span id="uploadButton" data-i18n="button.newPhoto">Nieuwe foto</span>
+					</label>
+				</form>
 			</div>
-		</div>
+			<div id="downloadNote">
+				<p id="noteText" data-i18n="note.download">Let op: Als de download niet werkt in LinkedIn-app, open deze pagina dan in een browser.</p>
+			</div>
+		</section>
+
 		<canvas id="canvas"></canvas>
-		<div id="getSignal" class="block">
-			<div class="columns is-centered">
-				<div class="column is-flex is-3 is-align-items-center">
-					<h3 class="title is-4 mb-0 has-text-centered" data-i18n="getSignal.title">Nog geen Signal?</h3>
-				</div>
-				<div class="column is-3">
-					<div id="storeLinks">
-						<a class="button is-dark is-small" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
-							<span class="icon"><i class="fab fa-google-play"></i></span>
-							<span data-i18n="getSignal.downloadAndroid">Download voor Android</span>
-						</a>
-						<a class="button is-dark is-small" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
-							<span class="icon"><i class="fab fa-apple"></i></span>
-							<span data-i18n="getSignal.downloadIos">Download voor iPhone/iPad</span>
-						</a>
-					</div>
+
+		<section id="getSignal">
+			<div class="container">
+				<h3 data-i18n="getSignal.title">Nog geen Signal?</h3>
+				<div id="storeLinks">
+					<a class="store-button" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.395 13l2.303-2.303v-.189zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+						<span data-i18n="getSignal.downloadAndroid">Download voor Android</span>
+					</a>
+					<a class="store-button" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+						<span data-i18n="getSignal.downloadIos">Download voor iPhone/iPad</span>
+					</a>
 				</div>
 			</div>
-		</div>
-		<div id="linkedinBar" class="block block-emphasis">
-			<a href="mailto:thijs@talboom.eu">Thijs Talboom</a> | <a href="https://www.linkedin.com/in/t-talboom/" target="_blank">LinkedIn</a> | <a href="https://github.com/talboom/ook-op-signal" target="_blank">GitHub code</a>
-		</div>
+		</section>
+
+		<footer id="linkedinBar">
+			<a href="mailto:thijs@talboom.eu">Thijs Talboom</a> | <a href="https://www.linkedin.com/in/t-talboom/" target="_blank">LinkedIn</a> | <a href="https://github.com/talboom/ook-op-signal" target="_blank">GitHub</a>
+		</footer>
 	</div>
-	<script src="javascript/burger.js?v=0.1"></script>
+	<script src="javascript/burger.js?v=0.2"></script>
 	<script src="javascript/language.js?v=0.6"></script>
 	<script src="javascript/upload.js?v=0.4"></script>
 	<script src="javascript/drag.js?v=0.1"></script>
