@@ -273,7 +273,6 @@ p:last-child {
 
 #selectedLang:hover {
     color: var(--color-white);
-    background-color: rgba(255, 255, 255, 0.12);
 }
 
 #selectedLang .nav-globe {
@@ -1098,14 +1097,75 @@ canvas {
     margin-bottom: 4px;
 }
 
-.content-section .aligned-list li {
-    background: none;
-    border: none;
-    padding: 4px 0;
+/* Quote Gallery — masonry-style wall */
+.quote-gallery {
+    columns: 2;
+    column-gap: 16px;
+    margin: 24px 0;
 }
 
-.content-section .aligned-list a {
+.quote-card {
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 16px;
+    padding: 24px;
+    background: var(--color-white);
+    border: var(--border-thick);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.2s var(--ease-bounce), box-shadow 0.2s var(--ease-smooth);
+}
+
+.quote-card:hover {
+    transform: translateY(-3px) rotate(-0.5deg);
+    box-shadow: var(--shadow-card-hover);
+    color: var(--color-text);
+}
+
+.quote-card blockquote {
+    font-family: var(--font-display);
     font-weight: 600;
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.quote-card cite {
+    display: block;
+    margin-top: 14px;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Stagger cards for a pinned-to-wall feel */
+.quote-card:nth-child(1) { transform: rotate(-1deg); }
+.quote-card:nth-child(2) { transform: rotate(0.5deg); }
+.quote-card:nth-child(3) { transform: rotate(0.8deg); }
+.quote-card:nth-child(4) { transform: rotate(-0.5deg); }
+
+.quote-card:nth-child(1):hover { transform: translateY(-3px) rotate(-1.5deg); }
+.quote-card:nth-child(2):hover { transform: translateY(-3px) rotate(0deg); }
+.quote-card:nth-child(3):hover { transform: translateY(-3px) rotate(0.3deg); }
+.quote-card:nth-child(4):hover { transform: translateY(-3px) rotate(-1deg); }
+
+@media screen and (max-width: 600px) {
+    .quote-gallery {
+        columns: 1;
+    }
+
+    .quote-card:nth-child(n) {
+        transform: none;
+    }
+
+    .quote-card:nth-child(n):hover {
+        transform: translateY(-3px);
+    }
 }
 
 /* ==========================================================================
