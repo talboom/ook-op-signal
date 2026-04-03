@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ook op Signal</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-	<link rel="stylesheet" href="css/styles.css?v=0.6">
+
+	<!-- Fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css?v=2.0">
 	<link rel="icon" type="images/png" href="images/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-	<nav id="topBar" class="navbar"  role="navigation" aria-label="main navigation">
+	<nav id="topBar" role="navigation" aria-label="main navigation">
 		<div class="navbar-container">
 			<div class="navbar-brand">
 				<a href="index.html?lang={{lang}}" id="title" data-i18n="logo.text" data-internal="true">Ook op<br/>Signal</a>
@@ -21,138 +23,150 @@
 				<span aria-hidden="true"></span>
 			</a>
 			<div class="navbar-menu" id="navMenu">
-				<div class="navbar-end">
-					<a href="index.html?lang={{lang}}" class="navbar-item" data-i18n="nav.tool" data-internal="true" id="nav-tool">
-						Tool
-					</a>
-					<a href="waaromSignal.html?lang={{lang}}" class="navbar-item is-active" data-i18n="nav.whySignal" data-internal="true" id="nav-why">
-						Waarom Signal?
-					</a>
-					<hr class="navbar-divider">
-					<div id="toggleLang" class="navbar-item">
-						<button id="selectedLang" aria-label="Select language">
-							<span class="language-option">
-								<span>Nederlands</span>
-							</span>
+				<a href="index.html?lang={{lang}}" class="navbar-item" data-i18n="nav.tool" data-internal="true" id="nav-tool">
+					Maak je badge
+				</a>
+				<a href="waaromSignal.html?lang={{lang}}" class="navbar-item is-active" data-i18n="nav.whySignal" data-internal="true" id="nav-why">
+					Waarom Signal?
+				</a>
+				<hr class="navbar-divider">
+				<div id="toggleLang" class="navbar-item">
+					<button id="selectedLang" aria-label="Select language">
+						<svg class="nav-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+						<span class="language-option">
+							<span>Nederlands</span>
+						</span>
+					</button>
+					<div id="langDropdown" class="dropdown-content">
+						<button class="language-option" data-lang="cs">
+							<span>Čeština</span>
 						</button>
-						<div id="langDropdown" class="dropdown-content">
-							<button class="language-option" data-lang="cs">
-								<span>Čeština</span>
-							</button>
-							<button class="language-option" data-lang="de">
-								<span>Deutsch</span>
-							</button>
-							<button class="language-option" data-lang="en">
-								<span>English</span>
-							</button>
-							<button class="language-option" data-lang="es">
-								<span>Español</span>
-							</button>
-							<button class="language-option" data-lang="fr">
-								<span>Française</span>
-							</button>
-							<button class="language-option" data-lang="it">
-								<span>Italiano</span>
-							</button>
-							<button class="language-option" data-lang="nl">
-								<span>Nederlands</span>
-							</button>
-							<button class="language-option" data-lang="pl">
-								<span>Polski</span>
-							</button>
-							<button class="language-option" data-lang="pt">
-								<span>Português</span>
-							</button>
-							<button class="language-option" data-lang="sv">
-								<span>Svenska</span>
-							</button>
-						</div>
+						<button class="language-option" data-lang="de">
+							<span>Deutsch</span>
+						</button>
+						<button class="language-option" data-lang="en">
+							<span>English</span>
+						</button>
+						<button class="language-option" data-lang="es">
+							<span>Español</span>
+						</button>
+						<button class="language-option" data-lang="fr">
+							<span>Français</span>
+						</button>
+						<button class="language-option" data-lang="it">
+							<span>Italiano</span>
+						</button>
+						<button class="language-option" data-lang="nl">
+							<span>Nederlands</span>
+						</button>
+						<button class="language-option" data-lang="pl">
+							<span>Polski</span>
+						</button>
+						<button class="language-option" data-lang="pt">
+							<span>Português</span>
+						</button>
+						<button class="language-option" data-lang="sv">
+							<span>Svenska</span>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
 	<div id="container">
-		<div id="intro" class="block block-emphasis">
-			<h1 id="introTitle" class="title is-3" data-i18n="intro.title">Stap over op Signal</h1>
-			<h2 class="subtitle is-5 mb-4" data-i18n="intro.subtitle">– en help anderen hetzelfde te doen!</h2>
-			<div id="introText">
-				<p class="mb-4" data-i18n="whySignal.intro1">De overstap van WhatsApp naar Signal lijkt simpel, maar in de praktijk blijkt het vaak lastig. Waarom overstappen als niemand in je netwerk Signal gebruikt? En waarom zou je Signal gebruiken als niemand overstapt? Dit is een probleem dat we samen moeten oplossen.</p>
-				<p class="mb-4" data-i18n="whySignal.intro2">Om dit probleem aan te pakken, heb ik een tool ontwikkeld waarmee je een OokopSignal-badge aan je profielfoto kunt toevoegen. Deze badge laat zien dat je <strong><i>ook op Signal</i></strong> bereikbaar bent, waardoor het voor je vrienden en familie makkelijker wordt om de overstap te maken.</p>
-				<p class="mb-4"><strong><span data-i18n="whySignal.callToAction">Doe ook mee! Samen kunnen we de overstap eenvoudiger maken! 🚀 </span><a href="index.html?lang={{lang}}" data-i18n="whySignal.findTool" data-internal="true">Hier vind je de tool</a></strong></p>
-				<p class="has-text-grey is-italic is-size-7" data-i18n="translation.disclaimer"></p>
+
+		<section id="intro">
+			<div class="hero-blob hero-blob-1"></div>
+			<div class="hero-blob hero-blob-2"></div>
+			<div class="container">
+				<h1 id="introTitle" data-i18n="intro.title">Ook op Signal?</h1>
+				<h2 class="hero-subtitle" data-i18n="intro.subtitle">Help je netwerk overstappen!</h2>
+				<div id="introText">
+					<p data-i18n="whySignal.intro1">Het lastigste aan overstappen van WhatsApp naar Signal? De eerste zijn. Als niemand in je omgeving op Signal zit, waarom zou jij dan overstappen? En als jij niet overstapt, waarom zij dan wel?</p>
+					<p data-i18n="whySignal.intro2">Deze badge helpt om die cirkel te doorbreken. Zet "Ook op Signal" op je profielfoto en laat je vrienden en familie zien dat je de stap hebt gezet. Soms is dat genoeg om de rest over de streep te trekken.</p>
+					<p><strong data-i18n="whySignal.callToAction">Samen kunnen we overstappen makkelijker maken.</strong> <a href="index.html?lang={{lang}}" data-i18n="whySignal.findTool" data-internal="true">Maak je badge</a></p>
+					<p class="disclaimer" data-i18n="translation.disclaimer"></p>
+				</div>
 			</div>
-		</div>
-		<div class="block has-text-left content">
-			<h1 id="introTitle" class="title is-4" data-i18n="whySignal.title">Waarom overstappen naar Signal?</h1>
-			<p data-i18n="whySignal.whatIsSignal">Signal is een privacygerichte berichtenapp die je communicatie beschermt met end-to-end encryptie. Dit betekent dat alleen jij en de ontvanger de berichten kunnen lezen, en niemand anders – zelfs Signal niet. In tegenstelling tot veel andere apps verzamelt Signal geen onnodige gegevens over jou. Het is open-source, wat betekent dat de code openbaar is en gecontroleerd kan worden door experts. Door over te stappen op Signal, kies je voor een veiliger en onafhankelijk alternatief dat jouw privacy respecteert.</p>
-			
-			<h2 class="title is-5 mb-4" data-i18n="whySignal.whyChooseSignal">Waarom kiezen voor Signal en niet WhatsApp?</h2>
-			<p data-i18n="whySignal.whatsappIssue">WhatsApp is, net als Facebook, onderdeel van Meta. Big Tech bedrijven zoals Meta, maar ook Google, hebben een enorme invloed op ons dagelijks leven. Ze verzamelen grote hoeveelheden persoonlijke gegevens, vaak zonder dat gebruikers zich volledig bewust zijn van de implicaties. Deze gegevens worden gebruikt voor gerichte advertenties en kunnen zelfs worden gedeeld met derden. Dit roept serieuze vragen op over privacy en controle over onze eigen informatie.</p>
-			<p data-i18n="whySignal.signalAlternative">Signal biedt een alternatief dat gericht is op privacy en veiligheid. Het bedrijf opereert fundamenteel anders dan traditionele Big Tech bedrijven:</p>
-			<ul>
-				<li><strong data-i18n="whySignal.benefit1Title">Geen winstoogmerk:</strong> <span data-i18n="whySignal.benefit1">Signal is een stichting zonder aandeelhouders of durfkapitalisten. Het wordt gefinancierd door donaties in plaats van advertenties.</span></li>
-				<li><strong data-i18n="whySignal.benefit2Title">Privacy als kern:</strong> <span data-i18n="whySignal.benefit2">Signal verzamelt geen gebruikersdata en biedt de hoogste mate van privacybescherming. Interessant genoeg gebruiken zelfs WhatsApp en Facebook Messenger Signals beveiligingsprotocol.</span></li>
-				<li><strong data-i18n="whySignal.benefit3Title">Ethisch leiderschap:</strong> <span data-i18n="whySignal.benefit3">Meredith Whittaker, de CEO van Signal, benadrukt ethische technologie en strijdt tegen het surveillancemodel van Big Tech.</span></li>
-				<li><strong data-i18n="whySignal.benefit4Title">Onafhankelijke infrastructuur:</strong> <span data-i18n="whySignal.benefit4">Signal beschermt gebruikers wereldwijd zonder compromissen te sluiten op het gebied van privacy of gebruiksgemak.</span></li>
-			</ul>
-			<h2 class="title is-5 mb-4" data-i18n="whySignal.openSourceTitle">Open Source en Transparantie</h2>
-			<p data-i18n="whySignal.openSourceText">Signal is open-source, wat betekent dat de code openbaar beschikbaar is en door onafhankelijke experts kan worden gecontroleerd. Dit zorgt voor transparantie en vertrouwen. Open-source software biedt gebruikers de zekerheid dat er geen verborgen functies of achterdeuren zijn, omdat iedereen de code kan inspecteren.</p>
-			<div data-lang-only="nl">
-				<h2 class="title is-5 mb-4" data-i18n="whySignal.learnMoreTitle">Meer weten?</h2>
-				<p data-i18n="whySignal.learnMoreText">Wil je meer weten over waarom overstappen naar Signal een goed idee is? Hier zijn enkele interessante artikelen en links:</p>
-				<ul class="aligned-list">
-					<li><a href="https://decorrespondent.nl/15891/waarom-signal-een-uitstekend-alternatief-is-voor-whatsapp/fd5e9d5b-e27e-0c9f-3b0c-6cb327b2045c" target="_blank">Waarom Signal een uitstekend alternatief is voor WhatsApp</a> door Maurits Martijn in De Correspondent.</li>
-					<li><a href="https://signalapp.nl/" target="_blank">Signalapp.nl:</a> D&eacute; onofficiële bron voor Signal Nieuws en Tips.</li>
-					<li><a href="https://berthub.eu/articles/posts/whatsapp-signal-verandering-valt-niet-mee/" target="_blank">Waarom we de barricades opgaan om WhatsApp te blijven gebruiken</a> door Bert Hubert.</li>
-					<li><a href="https://www.bitsoffreedom.nl/campagnes/download-signal/" target="_blank">"Word onafhankelijk van Big Tech, download Signal!"</a> een oproep om over te stappen van Bits of Freedom.</li>
-					<li><a href="https://decorrespondent.nl/15854/maak-kennis-met-meredith-whittaker-de-baas-van-signal-en-de-grote-uitdager-van-big-tech/203cb5ca-a514-0c16-2c4b-655580be91ab" target="_blank">Maak kennis met Meredith Whittaker, de baas van Signal en de grote uitdager van Big Tech</a> door Maurits Martijn in De Correspondent.</li>
-					<li>Of kijk op <a href="https://signal.org/" target="_blank">Signal's eigen website</a>.</li>
+		</section>
+
+		<div class="content-section">
+			<div class="container">
+				<h1 id="introTitle" data-i18n="whySignal.title">Waarom overstappen naar Signal?</h1>
+				<p data-i18n="whySignal.whatIsSignal">Signal houdt je gesprekken privé. Alleen jij en degene met wie je praat kunnen je berichten lezen — zelfs Signal zelf niet. Het verzamelt geen onnodige gegevens, en omdat de code open-source is, kan iedereen meekijken. Door over te stappen kies je voor een veiliger, onafhankelijk alternatief dat jouw privacy respecteert.</p>
+
+				<h2 data-i18n="whySignal.whyChooseSignal">Waarom kiezen voor Signal en niet WhatsApp?</h2>
+				<p data-i18n="whySignal.whatsappIssue">WhatsApp is onderdeel van Meta, het bedrijf achter Facebook en Instagram. Meta verzamelt, net als andere Big Tech-bedrijven, enorme hoeveelheden persoonlijke gegevens voor gerichte advertenties en deelt die met derden. Dat roept serieuze vragen op over je privacy.</p>
+				<p data-i18n="whySignal.signalAlternative">Signal werkt fundamenteel anders:</p>
+				<ul class="benefits-list">
+					<li><strong data-i18n="whySignal.benefit1Title">Geen winstoogmerk:</strong> <span data-i18n="whySignal.benefit1">Geen aandeelhouders, geen advertenties. Signal wordt gefinancierd door donaties. Dat betekent: Signal werkt voor jou, niet voor adverteerders.</span></li>
+					<li><strong data-i18n="whySignal.benefit2Title">Privacy als kern:</strong> <span data-i18n="whySignal.benefit2">Signal verzamelt niks over jou, en slaat geen persoonsgegevens op. Zelfs WhatsApp gebruikt Signals encryptieprotocol - maar helaas delen ze niet Signals bedrijfsfilosofie.</span></li>
+					<li><strong data-i18n="whySignal.benefit3Title">Ethisch leiderschap:</strong> <span data-i18n="whySignal.benefit3">CEO Meredith Whittaker is uitgesproken tegenstander van massasurveillance door Big Tech.</span></li>
+					<li><strong data-i18n="whySignal.benefit4Title">Onafhankelijke infrastructuur:</strong> <span data-i18n="whySignal.benefit4">Signal draait op eigen servers, onafhankelijk van Big Tech, en doet geen concessies aan privacy of gebruiksgemak.</span></li>
+					<li><strong data-i18n="whySignal.openSourceTitle">Open source en transparantie:</strong> <span data-i18n="whySignal.openSourceText">De code van Signal is openbaar. Iedereen kan meekijken, en controleren dat er geen achterdeurtjes inzitten.</span></li>
 				</ul>
-				<p data-i18n="whySignal.moreArticles">Ongetwijfeld vind je ook andere artikelen die het waard zijn om te lezen, als je zoekt in andere nieuwsmedia.</p>
-			</div>
-		</div>
-		<div id="howItWorks" class="block block-emphasis mb-0 pb-0">
-			<div class="columns is-centered">
-				<div class="column is-flex is-4 is-align-items-center"> 
-					<div id="howItWorksText">
-						<h3 class="title mb-2 has-text-left" data-i18n="howItWorks.title">Hoe werkt het?</h3>
-						<ul class="has-text-left mb-0">
-							<li data-i18n="howItWorks.step1">1. 📸 Upload je profielfoto</li>
-							<li data-i18n="howItWorks.step2">2. 🖼️ Voeg de badge toe</li>
-							<li data-i18n="howItWorks.step3">3. 📲 Gebruik op WhatsApp</li>
-						</ul>
+
+				<div>
+					<h2 data-i18n="whySignal.learnMoreTitle">Nog niet overtuigd? Lees verder.</h2>
+					<div class="quote-gallery">
+						<a href="https://decorrespondent.nl/15891/waarom-signal-een-uitstekend-alternatief-is-voor-whatsapp/fd5e9d5b-e27e-0c9f-3b0c-6cb327b2045c" target="_blank" class="quote-card quote-card-tall">
+							<blockquote data-i18n="whySignal.quote1">&ldquo;Eerst was het netwerkeffect een reden om Signal niet te gebruiken, nu is dat een reden er juist wel op te gaan.&rdquo;</blockquote>
+							<cite>Maurits Martijn &mdash; De Correspondent</cite>
+						</a>
+						<a href="https://berthub.eu/articles/posts/whatsapp-signal-verandering-valt-niet-mee/" target="_blank" class="quote-card">
+							<blockquote data-i18n="whySignal.quote2">&ldquo;Als je bezig bent te beargumenteren dat je best software kunt gebruiken van een club die keer op keer beboet wordt voor privacyschendingen, vraag je af waarom je dat zo graag wil.&rdquo;</blockquote>
+							<cite>Bert Hubert</cite>
+						</a>
+						<a href="https://signalapp.nl/" target="_blank" class="quote-card">
+							<blockquote data-i18n="whySignal.quote3">&ldquo;Signal is echt voor jou gemaakt. Andere apps zijn vooral ontworpen om uiteindelijk zoveel mogelijk geld aan je priv&eacute;gesprekken te kunnen verdienen.&rdquo;</blockquote>
+							<cite>Signalapp.nl</cite>
+						</a>
+						<a href="https://decorrespondent.nl/15854/maak-kennis-met-meredith-whittaker-de-baas-van-signal-en-de-grote-uitdager-van-big-tech/203cb5ca-a514-0c16-2c4b-655580be91ab" target="_blank" class="quote-card quote-card-tall">
+							<blockquote data-i18n="whySignal.quote4">&ldquo;We willen dat Signal werkt voor de cryptograaf in Berlijn &eacute;n voor je moeder die technologie spannend vindt.&rdquo;</blockquote>
+							<cite>Meredith Whittaker &mdash; De Correspondent</cite>
+						</a>
 					</div>
 				</div>
-				<div class="column is-6">
+			</div>
+		</div>
+
+		<section id="howItWorks">
+			<div class="container">
+				<div id="howItWorksText">
+					<h3 data-i18n="howItWorks.title">Zo werkt het</h3>
+					<ul>
+						<li data-i18n="howItWorks.step1">1. Upload je foto</li>
+						<li data-i18n="howItWorks.step2">2. Plaats de badge</li>
+						<li data-i18n="howItWorks.step3">3. Gebruik op WhatsApp</li>
+					</ul>
+				</div>
+				<div class="example-image">
 					<img src="images/example.png" alt="Example image">
 				</div>
 			</div>
-		</div>
-		<div id="getSignal" class="block">
-			<div class="columns is-centered">
-				<div class="column is-flex is-3 is-align-items-center">
-					<h3 class="title is-4 mb-0 has-text-centered" data-i18n="getSignal.title">Nog geen Signal?</h3>
-				</div>
-				<div class="column is-3">
-					<div id="storeLinks">
-						<a class="button is-dark is-small" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
-							<span class="icon"><i class="fab fa-google-play"></i></span>
-							<span data-i18n="getSignal.downloadAndroid">Download voor Android</span>
-						</a>
-						<a class="button is-dark is-small" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
-							<span class="icon"><i class="fab fa-apple"></i></span>
-							<span data-i18n="getSignal.downloadIos">Download voor iPhone/iPad</span>
-						</a>
-					</div>
+		</section>
+
+		<section id="getSignal">
+			<div class="container">
+				<h3 data-i18n="getSignal.title">Nog geen Signal?</h3>
+				<div id="storeLinks">
+					<a class="store-button" href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.395 13l2.303-2.303v-.189zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+						<span data-i18n="getSignal.downloadAndroid">Download voor Android</span>
+					</a>
+					<a class="store-button" href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8" target="_blank">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+						<span data-i18n="getSignal.downloadIos">Download voor iPhone/iPad</span>
+					</a>
 				</div>
 			</div>
-		</div>
-		<div id="linkedinBar" class="block block-emphasis">
-			<a href="mailto:thijs@talboom.eu">Thijs Talboom</a> | <a href="https://www.linkedin.com/in/t-talboom/" target="_blank">LinkedIn</a> | <a href="https://github.com/talboom/ook-op-signal" target="_blank">GitHub code</a>
-		</div>
+		</section>
+
+		<footer id="linkedinBar">
+			<a href="mailto:thijs@talboom.eu">Thijs Talboom</a> | <a href="https://www.linkedin.com/in/t-talboom/" target="_blank">LinkedIn</a> | <a href="https://github.com/talboom/ook-op-signal" target="_blank">GitHub</a>
+		</footer>
 	</div>
-	<script src="javascript/burger.js?v=0.1"></script>
+	<script src="javascript/burger.js?v=0.2"></script>
 	<script src="javascript/language.js?v=0.6"></script>
 	<script src="javascript/analytics.js?v=1.0"></script>
 </body>
