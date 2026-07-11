@@ -559,6 +559,62 @@ const translations = {
         'note.downloadLinkedin': 'Nejde stáhnout? Zkus otevřít tuhle stránku přímo v prohlížeči.',
         'translation.disclaimer': 'Tento text byl automaticky přeložen. Pokud si všimnete chyb, pošlete mi prosím e-mail.',
         'badge.english': 'Angličtina'
+    },
+    fi: {
+        // Navigation
+        'logo.text': 'Myös<br/>Signalissa',
+        'nav.tool': 'Luo oma merkki',
+        'nav.whySignal': 'Miksi Signal?',
+        'language': 'Suomi',
+        // Intro section
+        'intro.title': 'Myös Signalissa?',
+        'intro.subtitle': 'Lisää merkki profiilikuvaasi ja auta kavereitasi vaihtamaan.',
+        // Why Signal page
+        'whySignal.title': 'Miksi vaihtaa Signaliin?',
+        'whySignal.whyChooseSignal': 'Miksi valita Signal WhatsAppin sijaan?',
+        'whySignal.intro1': 'Vaikeinta WhatsAppista Signaliin vaihtamisessa? Olla ensimmäinen. Jos kukaan lähipiirissäsi ei ole Signalissa, miksi vaihtaisit? Ja jos sinä et vaihda, miksi he vaihtaisivat?',
+        'whySignal.intro2': 'Siksi tein tämän merkin. Lisää "Myös Signalissa" profiilikuvaasi ja näytä ystävillesi ja perheellesi, että olet ottanut askeleen. Joskus se riittää saamaan muutkin liikkeelle.',
+        'whySignal.readMoreQuestion': 'Miksi Signal?',
+        'whySignal.readMore': 'Tässä syy',
+        'whySignal.callToAction': 'Ole syy siihen, että joku vaihtaa.',
+        'whySignal.findTool': 'Luo oma merkki',
+        'whySignal.whatIsSignal': 'Signal pitää keskustelusi yksityisinä. Vain sinä ja henkilö, jonka kanssa puhut, voitte lukea viestinne — ei edes Signal itse. Se ei kerää turhaa tietoa, ja koska koodi on avointa, kuka tahansa voi tarkistaa sen. Vaihtamalla valitset turvallisemman, riippumattoman vaihtoehdon, joka kunnioittaa yksityisyyttäsi.',
+        'whySignal.whatsappIssue': 'WhatsApp on osa Metaa, Facebookin ja Instagramin takana olevaa yhtiötä. Meta kerää muiden teknologiajättien tavoin valtavia määriä henkilötietoja kohdennettua mainontaa varten ja jakaa niitä kolmansille osapuolille. Tämä herättää vakavia huolia yksityisyydestäsi.',
+        'whySignal.signalAlternative': 'Signal toimii perustavalla tavalla toisin:',
+        'whySignal.benefit1Title': 'Voittoa tavoittelematon',
+        'whySignal.benefit1': 'Ei osakkeenomistajia, ei mainoksia. Signal rahoitetaan lahjoituksin. Se tarkoittaa, että se työskentelee sinua, ei mainostajia varten.',
+        'whySignal.benefit2Title': 'Yksityisyys lähtökohtana',
+        'whySignal.benefit2': 'Signal ei kerää sinusta mitään eikä tallenna henkilötietoja. Jopa WhatsApp käyttää Signalin salausprotokollaa — se ei vain jaa Signalin arvoja.',
+        'whySignal.benefit3Title': 'Eettinen johtajuus',
+        'whySignal.benefit3': 'Puheenjohtaja Meredith Whittaker on yksi äänekkäimmistä Big Techin massavalvontaa vastustavista äänistä.',
+        'whySignal.benefit4Title': 'Riippumaton infrastruktuuri',
+        'whySignal.benefit4': 'Signal pyörittää omia palvelimiaan, riippumatta Big Techistä. Ei kompromisseja yksityisyydessä tai käytettävyydessä.',
+        'whySignal.openSourceTitle': 'Avoin lähdekoodi ja läpinäkyvyys',
+        'whySignal.openSourceText': 'Signalin koodi on julkista. Kuka tahansa voi tarkastaa sen ja varmistaa, ettei takaportteja ole.',
+        'whySignal.learnMoreTitle': 'Etkö ole vielä vakuuttunut? Lue lisää.',
+        'whySignal.quote1': '\u201CVerkostovaikutus oli ennen syy olla käyttämättä Signalia. Nyt se on syy liittyä.\u201D',
+        'whySignal.quote2': '\u201CJos huomaat perustelevasi, että on ihan ok käyttää ohjelmistoa yritykseltä, jota sakotetaan kerta toisensa jälkeen yksityisyysrikkomuksista, kysy itseltäsi, miksi haluat sitä niin kovasti.\u201D',
+        'whySignal.quote3': '\u201CSignal on todella tehty sinua varten. Muut sovellukset on suunniteltu lähinnä ansaitsemaan mahdollisimman paljon rahaa yksityisillä keskusteluillasi.\u201D',
+        'whySignal.quote4': '\u201CHaluamme, että Signal toimii niin berliiniläiselle kryptografille kuin äidillesikin, joka pitää teknologiaa hieman pelottavana.\u201D',
+        // Get Signal section
+        'getSignal.title': 'Eikö sinulla ole vielä Signalia?',
+        'getSignal.downloadAndroid': 'Lataa Androidille',
+        'getSignal.downloadIos': 'Lataa iPhonelle/iPadille',
+        // How it works
+        'howItWorks.title': 'Näin se toimii',
+        'howItWorks.step1': '1. Lataa kuvasi',
+        'howItWorks.step2': '2. Aseta merkki',
+        'howItWorks.step3': '3. Käytä WhatsAppissa',
+        // Buttons
+        'button.upload': 'Lataa kuva',
+        'button.newPhoto': 'Uusi kuva',
+        'button.download': 'Lataa',
+        // Note
+        'note.privacy': 'Kuvasi ei koskaan poistu laitteeltasi. Emme tallenna mitään.',
+        'note.download': 'Eikö lataus toimi? Kokeile avata tämä sivu suoraan selaimessasi.',
+        'note.downloadLinkedin': 'Eikö lataus toimi? Kokeile avata tämä sivu suoraan selaimessasi.',
+        'translation.disclaimer': 'Tämä teksti on käännetty automaattisesti. Lähetä minulle sähköpostia, jos huomaat virheitä.',
+        'badge.english': 'Englanti'
     }
 };
 
@@ -567,13 +623,13 @@ function getLanguageFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const langParam = params.get('lang');
     
-    if (langParam && ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl', 'pt', 'cs'].includes(langParam)) {
+    if (langParam && ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl', 'pt', 'cs', 'fi'].includes(langParam)) {
         return langParam;
     }
 
     // Default to browser language or 'nl' if not specified
     const browserLang = navigator.language.split('-')[0];
-    return ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl', 'pt', 'cs'].includes(browserLang) ? browserLang : 'nl';
+    return ['en', 'nl', 'de', 'sv', 'fr', 'es', 'it', 'pl', 'pt', 'cs', 'fi'].includes(browserLang) ? browserLang : 'nl';
 }
 
 // Update the URL with the selected language and update all navigation links
@@ -776,7 +832,8 @@ const overlayImages = {
     it: 'images/anchesusignal.png',
     pl: 'images/rownieznasignal2.png',
     pt: 'images/tambemnosignal.png',
-    cs: 'images/takenasignalu.png'
+    cs: 'images/takenasignalu.png',
+    fi: 'images/myossignalissa.png'
 };
 
 // Initialize when DOM is loaded
