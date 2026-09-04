@@ -10,16 +10,16 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
 const lang = getLanguageFromUrl();
 
-let currentOverlay = overlayImages[lang];
-
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {
     thumbnail.addEventListener('click', function () {
         // Remove active class from all thumbnails
         document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
         // Add active class to the clicked thumbnail
         this.classList.add('active');
-        // Update the current overlay
+        // Update the current overlay and remember the chosen badge variant
         currentOverlay = this.dataset.overlay;
+        const container = this.closest('.thumbnail-container');
+        selectedBadgeVariant = container && container.dataset.badgeVariant === 'rather' ? 'rather' : 'also';
         let signalBox = document.getElementById('signalBox');
         if (signalBox) {
             signalBox.style.backgroundImage = `url(${currentOverlay})`;

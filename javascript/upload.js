@@ -123,9 +123,13 @@ function centerSpotlight(spotlight, imagePreview) {
 }
 
 function setupThumbnails() {
-    const currentOverlay = overlayImages[lang];
+    // Keep the selected badge variant, reset to the current language's badge
+    currentOverlay = badgeOverlay(lang, selectedBadgeVariant);
     document.getElementById('signalBox').style.backgroundImage = `url(${currentOverlay})`;
     document.querySelectorAll('#thumbnails .thumbnail').forEach(t => t.classList.remove('active'));
-    document.querySelector('#thumbnails .thumbnail-' + lang).classList.add('active');
+    const thumbnail = badgeThumbnail(lang, selectedBadgeVariant);
+    if (thumbnail) {
+        thumbnail.classList.add('active');
+    }
     filterThumbnails(lang);
 }

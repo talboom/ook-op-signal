@@ -778,6 +778,7 @@ p:last-child {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    width: 140px;
     transition: transform 0.2s var(--ease-bounce);
 }
 
@@ -814,6 +815,7 @@ p:last-child {
     font-weight: 600;
     color: var(--color-primary-dark);
     letter-spacing: 0.02em;
+    text-align: center;
     transition: color 0.2s var(--ease-smooth);
 }
 
@@ -1308,6 +1310,10 @@ canvas {
         padding: 12px;
     }
 
+    .thumbnail-container {
+        width: 110px;
+    }
+
     #thumbnails {
         gap: 18px;
     }
@@ -1331,6 +1337,10 @@ canvas {
         width: 100px;
         height: 100px;
         padding: 10px;
+    }
+
+    .thumbnail-container {
+        width: 100px;
     }
 
     .thumbnail-container span {

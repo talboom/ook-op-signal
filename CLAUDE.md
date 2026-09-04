@@ -30,19 +30,19 @@ When editing `javascript/language.js` (or any `.js` file), never use typographic
 
 **JavaScript modules (loaded as separate `<script>` tags, order matters):**
 1. `javascript/burger.js` — Mobile navbar hamburger menu toggle
-2. `javascript/language.js` — i18n system: contains all translations as a `translations` object and `overlayImages` language-to-badge mapping. Reads `?lang=` URL param, falls back to browser language, defaults to `nl`. Exposes global functions (`getLanguageFromUrl`, `setLanguage`, `translatePage`) and the `overlayImages` map used by other scripts
+2. `javascript/language.js` — i18n system: contains all translations as a `translations` object and the `overlayImages`/`overlayImagesRather` language-to-badge mappings. Reads `?lang=` URL param, falls back to browser language, defaults to `nl`. Exposes global functions (`getLanguageFromUrl`, `setLanguage`, `translatePage`, `badgeOverlay`, `badgeThumbnail`) plus the badge selection state (`currentOverlay`, `selectedBadgeVariant`) used by the other scripts
 3. `javascript/upload.js` — Image upload handling, canvas rendering, spotlight (crop area) setup with resize handles. Depends on globals from `language.js` (`overlayImages`, `lang`)
 4. `javascript/drag.js` — Makes the spotlight/crop area draggable and resizable (mouse + touch + pinch-to-zoom)
 5. `javascript/download.js` — Crops image to spotlight area, composites the selected badge overlay, and triggers PNG download. Depends on globals from `language.js`
 6. `javascript/analytics.js` — Sends page_visits/upload_clicks/download_clicks events to `analytics.php`
 
 **Internationalization:**
-- 10 languages: cs, de, en, es, fr, it, nl, pl, pt, sv
+- 11 languages: cs, de, en, es, fi, fr, it, nl, pl, pt, sv
 - All translations live in the `translations` object in `language.js`
 - HTML elements use `data-i18n="key"` attributes; `translatePage()` sets innerHTML from translations
 - `data-lang-only="nl"` hides/shows content for specific languages (used for NL-only "learn more" links)
 - Internal links use `data-internal="true"` and `{{lang}}` placeholder in href, replaced at runtime
-- Each language has a corresponding badge overlay PNG in `images/` (e.g., `alsoonsignal.png`, `ookopsignal.png`)
+- Each language has two badge overlay PNGs in `images/`: the default "Also on Signal" badge (e.g., `alsoonsignal.png`, `ookopsignal.png`) and the alternative "Rather on Signal" badge (e.g., `ratheronsignal.png`, `lieveropsignal.png`). Thumbnails are labelled with the `badge.also`/`badge.rather` translations; new badges are generated with `helpers/generate_badge.py`
 
 **Image processing pipeline (all client-side, no server upload):**
 1. User uploads image → drawn to hidden `<canvas>`

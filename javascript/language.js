@@ -54,7 +54,9 @@ const translations = {
         'note.download': 'Download not working? Try opening this page in your browser directly.',
         'note.downloadLinkedin': 'Download not working? Try opening this page in your browser directly.',
         'translation.disclaimer': '',
-        'badge.english': 'English'
+        'badge.english': 'English',
+        'badge.also': 'Also on Signal',
+        'badge.rather': 'Rather on Signal'
     },
     nl: {
         // Navigation
@@ -110,7 +112,9 @@ const translations = {
         'note.download': 'Werkt de download niet? Probeer deze pagina direct in je browser te openen.',
         'note.downloadLinkedin': 'Werkt de download niet? Probeer deze pagina direct in je browser te openen.',
         'translation.disclaimer': '',
-        'badge.english': 'Engels'
+        'badge.english': 'Engels',
+        'badge.also': 'Ook op Signal',
+        'badge.rather': 'Liever op Signal'
     },
     de: {
         // Navigation
@@ -166,7 +170,9 @@ const translations = {
         'note.download': 'Download klappt nicht? Versuch die Seite direkt im Browser zu öffnen.',
         'note.downloadLinkedin': 'Download klappt nicht? Versuch die Seite direkt im Browser zu öffnen.',
         'translation.disclaimer': 'Dieser Text wurde automatisch übersetzt. Bitte senden Sie mir eine E-Mail, wenn Sie Fehler bemerken.',
-        'badge.english': 'Englisch'
+        'badge.english': 'Englisch',
+        'badge.also': 'Auch auf Signal',
+        'badge.rather': 'Lieber auf Signal'
     },
     sv: {
         // Navigation
@@ -222,7 +228,9 @@ const translations = {
         'note.download': 'Fungerar inte nedladdningen? Försök öppna sidan direkt i din webbläsare.',
         'note.downloadLinkedin': 'Fungerar inte nedladdningen? Försök öppna sidan direkt i din webbläsare.',
         'translation.disclaimer': '',
-        'badge.english': 'Engelska'
+        'badge.english': 'Engelska',
+        'badge.also': 'Också på Signal',
+        'badge.rather': 'Hellre på Signal'
     },
     es: {
         // Navigation
@@ -278,7 +286,9 @@ const translations = {
         'note.download': '¿La descarga no funciona? Prueba a abrir esta página directamente en tu navegador.',
         'note.downloadLinkedin': '¿La descarga no funciona? Prueba a abrir esta página directamente en tu navegador.',
         'translation.disclaimer': 'Este texto ha sido traducido automáticamente. Por favor, envíame un correo electrónico si notas algún error.',
-        'badge.english': 'Inglés'
+        'badge.english': 'Inglés',
+        'badge.also': 'También en Signal',
+        'badge.rather': 'Mejor en Signal'
     },
     fr: {
         // Navigation
@@ -334,7 +344,9 @@ const translations = {
         'note.download': 'Le téléchargement ne marche pas ? Essaie d\'ouvrir cette page directement dans ton navigateur.',
         'note.downloadLinkedin': 'Le téléchargement ne marche pas ? Essaie d\'ouvrir cette page directement dans ton navigateur.',
         'translation.disclaimer': 'Ce texte a été traduit automatiquement. Veuillez m\'envoyer un e-mail si vous remarquez des erreurs.',
-        'badge.english': 'Anglais'
+        'badge.english': 'Anglais',
+        'badge.also': 'Aussi sur Signal',
+        'badge.rather': 'Plutôt sur Signal'
     },
     it: {
         // Navigation
@@ -390,7 +402,9 @@ const translations = {
         'note.download': 'Il download non funziona? Prova ad aprire questa pagina direttamente nel browser.',
         'note.downloadLinkedin': 'Il download non funziona? Prova ad aprire questa pagina direttamente nel browser.',
         'translation.disclaimer': 'Questo testo è stato tradotto automaticamente. Ti prego di inviarmi un\'email se noti errori.',
-        'badge.english': 'Inglese'
+        'badge.english': 'Inglese',
+        'badge.also': 'Anche su Signal',
+        'badge.rather': 'Meglio su Signal'
     },
     pl: {
         // Navigation
@@ -446,7 +460,9 @@ const translations = {
         'note.download': 'Pobieranie nie działa? Spróbuj otworzyć tę stronę bezpośrednio w przeglądarce.',
         'note.downloadLinkedin': 'Pobieranie nie działa? Spróbuj otworzyć tę stronę bezpośrednio w przeglądarce.',
         'translation.disclaimer': 'Ten tekst został przetłumaczony automatycznie. Proszę o wysłanie mi e-maila, jeśli zauważysz błędy.',
-        'badge.english': 'Angielski'
+        'badge.english': 'Angielski',
+        'badge.also': 'Również na Signal',
+        'badge.rather': 'Lepiej na Signal'
     },
     pt: {
         // Navigation
@@ -502,7 +518,9 @@ const translations = {
         'note.download': 'O download não funcionou? Tente abrir esta página direto no navegador.',
         'note.downloadLinkedin': 'O download não funcionou? Tente abrir esta página direto no navegador.',
         'translation.disclaimer': 'Este texto foi traduzido automaticamente. Por favor, envie-me um e-mail se notar erros.',
-        'badge.english': 'Inglês'
+        'badge.english': 'Inglês',
+        'badge.also': 'Também no Signal',
+        'badge.rather': 'Melhor no Signal'
     },
     cs: {
         // Navigation
@@ -558,7 +576,9 @@ const translations = {
         'note.download': 'Nejde stáhnout? Zkus otevřít tuhle stránku přímo v prohlížeči.',
         'note.downloadLinkedin': 'Nejde stáhnout? Zkus otevřít tuhle stránku přímo v prohlížeči.',
         'translation.disclaimer': 'Tento text byl automaticky přeložen. Pokud si všimnete chyb, pošlete mi prosím e-mail.',
-        'badge.english': 'Angličtina'
+        'badge.english': 'Angličtina',
+        'badge.also': 'Také na Signalu',
+        'badge.rather': 'Raději na Signalu'
     },
     fi: {
         // Navigation
@@ -614,7 +634,9 @@ const translations = {
         'note.download': 'Eikö lataus toimi? Kokeile avata tämä sivu suoraan selaimessasi.',
         'note.downloadLinkedin': 'Eikö lataus toimi? Kokeile avata tämä sivu suoraan selaimessasi.',
         'translation.disclaimer': 'Tämä teksti on käännetty automaattisesti. Lähetä minulle sähköpostia, jos huomaat virheitä.',
-        'badge.english': 'Englanti'
+        'badge.english': 'Englanti',
+        'badge.also': 'Myös Signalissa',
+        'badge.rather': 'Mieluiten Signalissa'
     }
 };
 
@@ -652,17 +674,17 @@ function updateUrlLanguage(lang) {
         }
     });
 
-    // Set default overlay based on language
-    const defaultOverlay = overlayImages[lang];
+    // Set overlay based on language, keeping the selected badge variant
+    currentOverlay = badgeOverlay(lang, selectedBadgeVariant);
 
     let signalBox = document.getElementById('signalBox');
     if (signalBox) {
-        signalBox.style.backgroundImage = `url(${defaultOverlay})`;
-    }    
+        signalBox.style.backgroundImage = `url(${currentOverlay})`;
+    }
 
     // active class
     document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
-    let thumbnail = document.querySelector('.thumbnail-' + lang);
+    let thumbnail = badgeThumbnail(lang, selectedBadgeVariant);
     if (thumbnail) {
         thumbnail.classList.add('active');
     }
@@ -802,26 +824,22 @@ function setLanguage(lang) {
 function filterThumbnails(lang) {
     document.querySelectorAll('.thumbnail-container[data-badge-lang]').forEach(container => {
         const badgeLang = container.dataset.badgeLang;
+        // Default badge ('also') first, alternative badge ('rather') right after it
+        const variantOrder = container.dataset.badgeVariant === 'rather' ? 1 : 0;
         if (lang === 'en') {
             container.style.display = badgeLang === 'en' ? '' : 'none';
-            container.style.order = '';
+            container.style.order = String(1 + variantOrder);
         } else {
             const visible = badgeLang === lang || badgeLang === 'en';
             container.style.display = visible ? '' : 'none';
             // Local language first (left), English second (right)
-            container.style.order = badgeLang === lang ? '1' : '2';
-        }
-        // Translate the English badge label to the current language
-        if (badgeLang === 'en') {
-            const label = container.querySelector('span');
-            if (label && translations[lang] && translations[lang]['badge.english']) {
-                label.textContent = translations[lang]['badge.english'];
-            }
+            container.style.order = String((badgeLang === lang ? 1 : 3) + variantOrder);
         }
     });
 }
 
-// Overlay images mapping for different languages
+// Overlay images mapping for different languages: the default 'Also on Signal'
+// badge and the alternative 'Rather on Signal' one
 const overlayImages = {
     en: 'images/alsoonsignal.png',
     nl: 'images/ookopsignal.png',
@@ -835,6 +853,36 @@ const overlayImages = {
     cs: 'images/takenasignalu.png',
     fi: 'images/myossignalissa.png'
 };
+
+const overlayImagesRather = {
+    en: 'images/ratheronsignal.png',
+    nl: 'images/lieveropsignal.png',
+    de: 'images/lieberaufsignal.png',
+    sv: 'images/hellrepasignal.png',
+    fr: 'images/plutotsursignal.png',
+    es: 'images/mejorensignal.png',
+    it: 'images/megliosusignal.png',
+    pl: 'images/lepiejnasignal.png',
+    pt: 'images/melhornosignal.png',
+    cs: 'images/radejinasignalu.png',
+    fi: 'images/mieluitensignalissa.png'
+};
+
+// Currently selected badge: 'also' (default) or 'rather', and its overlay image.
+// Shared with upload.js and download.js.
+let selectedBadgeVariant = 'also';
+let currentOverlay = overlayImages[getLanguageFromUrl()];
+
+// Overlay image for a language and badge variant
+function badgeOverlay(lang, variant) {
+    const images = variant === 'rather' ? overlayImagesRather : overlayImages;
+    return images[lang] || overlayImages[lang];
+}
+
+// Thumbnail element for a language and badge variant
+function badgeThumbnail(lang, variant) {
+    return document.querySelector('.thumbnail-' + lang + (variant === 'rather' ? '-rather' : ''));
+}
 
 // Initialize when DOM is loaded
 if (document.readyState === 'loading') {
